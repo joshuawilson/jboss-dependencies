@@ -1,0 +1,1 @@
+Use this pom to identify all know dependencies for JBoss/WildFly.

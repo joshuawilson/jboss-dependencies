@@ -1,0 +1,942 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>org.jboss.bom</groupId>
+	<artifactId>jboss-bom-dependencies</artifactId>
+	<version>0.1-SNAPSHOT</version>
+
+	<packaging>pom</packaging>
+
+	<name>JBoss BOM Dependencies </name>
+	<description>Dependency Management BOM </description>
+
+	<url>http://www.jboss.org</url>
+	<issueManagement>
+		<system>JIRA</system>
+		<url>https://issues.jboss.org/</url>
+	</issueManagement>
+
+	<scm>
+		<connection>scm:git:git@github.com:joshuawilson/jboss-dependencies.git</connection>
+		<developerConnection>scm:git:git@github.com:joshuawilson/jboss-dependencies.git</developerConnection>
+		<url>http://github.com/joshuawilson/jboss-dependencies</url>
+	</scm>
+
+	<developers>
+		<developer>
+			<id>jboss.org</id>
+			<name>JBoss.org Community</name>
+			<organization>JBoss.org</organization>
+			<organizationUrl>http://www.jboss.org</organizationUrl>
+		</developer>
+	</developers>
+
+	<licenses>
+		<license>
+			<name>GNU Lesser General Public License, Version 2.1</name>
+			<url>http://www.gnu.org/licenses/lgpl-2.1.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<properties>
+        <version.aopalliance>1.0</version.aopalliance>
+        <version.ch.qos.cal10n>0.8.1</version.ch.qos.cal10n>
+<!--         <version.com.google.appengine>1.7.6</version.com.google.appengine> -->
+        <version.com.google.appengine>1.7.7.1</version.com.google.appengine>
+<!--         <version.com.google.guava>r05</version.com.google.guava> -->
+<!--         <version.com.google.guava>13.0.1</version.com.google.guava> -->
+        <version.com.google.guava>14.0.1</version.com.google.guava>
+        <version.com.google.gwt>2.5.1</version.com.google.gwt>
+        <version.com.google.inject.guice>3.0</version.com.google.inject.guice>
+        <version.com.ocpsoft.ocpsoft-pretty-faces>2.0.4</version.com.ocpsoft.ocpsoft-pretty-faces>
+<!--         <version.com.sun.faces.jsf.impl>2.0.2</version.com.sun.faces.jsf.impl> -->
+        <version.com.sun.faces.jsf.impl>2.1.21</version.com.sun.faces.jsf.impl>
+<!--         <version.com.thoughtworks.paranamer>2.3</version.com.thoughtworks.paranamer> -->
+        <version.com.thoughtworks.paranamer>2.5.2</version.com.thoughtworks.paranamer>
+<!--         <version.commons-codec>1.5</version.commons-codec> -->
+        <version.commons-codec>1.7</version.commons-codec>
+<!--         <version.commons-io>1.4</version.commons-io> -->
+        <version.commons-io>2.4</version.commons-io>
+        <version.commons-lang>2.6</version.commons-lang>
+<!--         <version.commons-logging>1.1.1</version.commons-logging> -->
+        <version.commons-logging>1.1.2</version.commons-logging>
+        <version.javax.annotation>1.0</version.javax.annotation>
+        <version.javax.el>2.2</version.javax.el>
+<!--         <version.javax.enterprise>1.0-SP4</version.javax.enterprise> -->
+        <version.javax.enterprise>1.1</version.javax.enterprise>
+        <version.javax.inject>1</version.javax.inject>
+        <version.javax.jms>1.1</version.javax.jms>
+<!--         <version.javax.persistence>1.0</version.javax.persistence> -->
+        <version.javax.persistence>1.0.2</version.javax.persistence>
+        <version.javax.servlet>2.5</version.javax.servlet>
+        <version.javax.transaction>1.1</version.javax.transaction>
+        <version.org.jboss.spec.javax.resource.jboss-connector-api-1.5-spec>1.0.0.Final</version.org.jboss.spec.javax.resource.jboss-connector-api-1.5-spec>
+<!--         <version.javax.validation>1.0.0.GA</version.javax.validation> -->
+        <version.javax.validation>1.1.0.Final</version.javax.validation>
+<!--         <version.junit>4.4</version.junit> -->
+<!--         <version.junit>4.8.1</version.junit> -->
+<!--         <version.junit>4.10</version.junit> -->
+        <version.junit>4.11</version.junit>
+<!--         <version.log4j>1.2.16</version.log4j> -->
+        <version.log4j>1.2.17</version.log4j>
+<!--         <version.org.apache.avro>1.6.3</version.org.apache.avro> -->
+        <version.org.apache.avro>1.7.4</version.org.apache.avro>
+        <version.org.apache.lucene.lucene-regex>3.0.3</version.org.apache.lucene.lucene-regex>
+<!--         <version.org.apache.lucene>3.6.2</version.org.apache.lucene> -->
+        <version.org.apache.lucene>4.2.1</version.org.apache.lucene>
+<!--         <version.xerces>2.9.1</version.xerces> -->
+<!--         <version.xerces>2.10.0</version.xerces> -->
+        <version.org.apache.servicemix.bundles.xerces>2.11.0_1</version.org.apache.servicemix.bundles.xerces>
+<!--         <version.org.apache.tika.tika-core>1.1</version.org.apache.tika.tika-core> -->
+        <version.org.apache.tika.tika-core>1.3</version.org.apache.tika.tika-core>
+<!--         <version.org.aspectj>1.6.6</version.org.aspectj> -->
+<!--         <version.org.aspectj>1.7.1</version.org.aspectj> -->
+        <version.org.aspectj>1.7.2</version.org.aspectj>
+<!--         <version.org.codehaus.jackson>1.9.2</version.org.codehaus.jackson> -->
+        <version.org.codehaus.jackson>1.9.12</version.org.codehaus.jackson>
+<!--         <version.org.glassfish.web.el-impl>2.1.2-b04</version.org.glassfish.web.el-impl> -->
+        <version.org.glassfish.web.el-impl>2.2.1-b05</version.org.glassfish.web.el-impl>
+        <version.org.hibernate.common.hibernate-commons-annotations>4.0.1.Final</version.org.hibernate.common.hibernate-commons-annotations>
+<!--         <version.org.hibernate.hibernate-core>3.5.1-Final</version.org.hibernate.hibernate-core> -->
+        <version.org.hibernate.hibernate-core>4.2.0.Final</version.org.hibernate.hibernate-core>
+        <version.org.hibernate.hibernate-jpamodelgen>1.2.0.Final</version.org.hibernate.hibernate-jpamodelgen>
+        <version.org.hibernate.hibernate-search>4.2.0.Final</version.org.hibernate.hibernate-search>
+<!--         <version.org.hibernate.hibernate-validator>4.0.0.GA</version.org.hibernate.hibernate-validator> -->
+<!--         <version.org.hibernate.hibernate-validator>4.2.0.Final</version.org.hibernate.hibernate-validator> -->
+        <version.org.hibernate.hibernate-validator>5.0.0.Final</version.org.hibernate.hibernate-validator>
+        <version.org.hibernate.javax.persistence>1.0.1.Final</version.org.hibernate.javax.persistence>
+<!--         <version.org.hsqldb>1.8.0.10</version.org.hsqldb> -->
+        <version.org.hsqldb>2.2.9</version.org.hsqldb>
+<!--         <version.org.infinispan>5.2.4.Final</version.org.infinispan> -->
+        <version.org.infinispan>5.2.5.Final</version.org.infinispan>
+        <version.org.jboss.aop>2.0.1.GA</version.org.jboss.aop>
+<!--         <version.org.jboss.arquillian>1.0.0.Alpha2</version.org.jboss.arquillian> -->
+        <version.org.jboss.arquillian>1.0.3.Final</version.org.jboss.arquillian>
+        <version.org.jboss.arquillian.arquillian-bom>1.0.3.Final</version.org.jboss.arquillian.arquillian-bom>
+        <version.org.jboss.arquillian.container.arquillian-glassfish-embedded-30></version.org.jboss.arquillian.container.arquillian-glassfish-embedded-30>
+        <version.org.jboss.arquillian.container.arquillian-glassfish-managed-3.1>1.0.0.CR3</version.org.jboss.arquillian.container.arquillian-glassfish-managed-3.1>
+        <version.org.jboss.arquillian.container.arquillian-glassfish-remote-3.1>1.0.0.CR3</version.org.jboss.arquillian.container.arquillian-glassfish-remote-3.1>
+        <version.org.jboss.arquillian.container.arquillian-jbossas-managed-6>1.0.0.CR3</version.org.jboss.arquillian.container.arquillian-jbossas-managed-6>
+        <version.org.jboss.arquillian.container.arquillian-jbossas-remote-60>1.0.0.Alpha2</version.org.jboss.arquillian.container.arquillian-jbossas-remote-60>
+        <version.org.jboss.arquillian.container.arquillian-openshift-express>1.0.0.Beta1</version.org.jboss.arquillian.container.arquillian-openshift-express>
+        <version.org.jboss.arquillian.container.arquillian-tomcat-managed-6>1.0.0.CR4</version.org.jboss.arquillian.container.arquillian-tomcat-managed-6>
+        <version.org.jboss.arquillian.container.arquillian-tomcat-managed-7>1.0.0.CR4</version.org.jboss.arquillian.container.arquillian-tomcat-managed-7>
+        <version.org.jboss.arquillian.container.arquillian-tomcat-remote-6>1.0.0.CR4</version.org.jboss.arquillian.container.arquillian-tomcat-remote-6>
+        <version.org.jboss.arquillian.container.arquillian-weld-embedded>1.0.0.Alpha2</version.org.jboss.arquillian.container.arquillian-weld-embedded>
+        <version.org.jboss.arquillian.extension.arquillian-android-depchain>1.0.0.Alpha2</version.org.jboss.arquillian.extension.arquillian-android-depchain>
+        <version.org.jboss.arquillian.extension.arquillian-drone-bom>1.1.1.Final</version.org.jboss.arquillian.extension.arquillian-drone-bom>
+<!--         <version.org.jboss.arquillian.extension.arquillian-drone-bom>1.2.0.Final-SNAPSHOT</version.org.jboss.arquillian.extension.arquillian-drone-bom> -->
+        <version.org.jboss.arquillian.extension.arquillian-drone-webdriver-depchain>1.1.1.Final</version.org.jboss.arquillian.extension.arquillian-drone-webdriver-depchain>
+        <version.org.jboss.arquillian.extension.arquillian-phantom-driver>1.0.3</version.org.jboss.arquillian.extension.arquillian-phantom-driver>
+        <version.org.jboss.arquillian.extension.arquillian-warp-jsf>1.0.0.Alpha2</version.org.jboss.arquillian.extension.arquillian-warp-jsf>
+        <version.org.jboss.arquillian.graphene>1.0.0.Final</version.org.jboss.arquillian.graphene>
+<!--         <version.org.jboss.arquillian.graphene.graphene-webdriver>2.0.0.Beta1-SNAPSHOT</version.org.jboss.arquillian.graphene.graphene-webdriver> -->
+        <version.org.jboss.arquillian.graphene.graphene-webdriver>2.0.0.Alpha3</version.org.jboss.arquillian.graphene.graphene-webdriver>
+        <version.org.jboss.arquillian.junit>1.0.3.Final</version.org.jboss.arquillian.junit>
+        <version.org.jboss.arquillian.protocol.arquillian-protocol-servlet>1.0.3.Final</version.org.jboss.arquillian.protocol.arquillian-protocol-servlet>
+<!--         <version.org.jboss.as7>7.1.0.Final</version.org.jboss.as7> -->
+        <version.org.jboss.as7>7.2.0.Final</version.org.jboss.as7>
+<!--         <version.org.jboss.byteman>2.1.0</version.org.jboss.byteman> -->
+        <version.org.jboss.byteman>2.1.2</version.org.jboss.byteman>
+<!--         <version.org.jboss.classloader>2.2.0.Alpha3</version.org.jboss.classloader> -->
+        <version.org.jboss.classloader>2.2.1.GA</version.org.jboss.classloader>
+<!--         <version.org.jboss.common.core>2.2.17.GA</version.org.jboss.common.core> -->
+        <version.org.jboss.common.core>2.2.20.GA</version.org.jboss.common.core>
+<!--         <version.org.jboss.deployers>2.2.0.Alpha2</version.org.jboss.deployers> -->
+        <version.org.jboss.deployers>2.2.2.GA</version.org.jboss.deployers>
+        <version.org.jboss.errai>2.3.0.Final</version.org.jboss.errai>
+<!--         <version.org.jboss.ironjacamar>1.0.4.Final</version.org.jboss.ironjacamar> -->
+        <version.org.jboss.ironjacamar>1.0.16.Final</version.org.jboss.ironjacamar>
+        <version.org.jboss.jandex>1.0.0.Beta7</version.org.jboss.jandex>
+<!--         <version.org.jboss.javaee.jboss-ejb-api>3.0.0.GA</version.org.jboss.javaee.jboss-ejb-api> -->
+        <version.org.jboss.javaee.jboss-ejb-api>3.0.0.GA_SP1</version.org.jboss.javaee.jboss-ejb-api>
+<!--         <version.org.jboss.javassist>3.11.0.GA</version.org.jboss.javassist> -->
+        <version.org.jboss.javassist>3.17.1-GA</version.org.jboss.javassist>
+<!--         <version.org.jboss.jbossts.jbossjts>4.16.4.Final</version.org.jboss.jbossts.jbossjts> -->
+        <version.org.jboss.jbossts.jta.narayana-jta>4.17.3.Final</version.org.jboss.jbossts.jta.narayana-jta>
+<!--         <version.org.jboss.jbossts.jta.narayana-jta>4.17.4.Final</version.org.jboss.jbossts.jta.narayana-jta> -->
+<!--         <version.org.jboss.kernel>2.2.0.Alpha6</version.org.jboss.kernel> -->
+<!--         <version.org.jboss.mdr>2.2.0.Alpha1</version.org.jboss.mdr> -->
+        <version.org.jboss.jboss-mdr>2.2.0.SP1</version.org.jboss.jboss-mdr>
+<!--         <version.org.jboss.mdr.vfs2>2.0.2.GA</version.org.jboss.mdr.vfs2> -->
+<!--         <version.org.jboss.vfs2>2.1.3.SP1</version.org.jboss.vfs2> -->
+        <version.org.jboss.jboss-vfs>3.1.0.Final</version.org.jboss.jboss-vfs>
+<!--         <version.org.jboss.logging>3.1.0.GA</version.org.jboss.logging> -->
+        <version.org.jboss.logging>3.1.3.GA</version.org.jboss.logging>
+<!--         <version.org.jboss.logging.jboss-logging-log4j>2.1.0.GA</version.org.jboss.logging.jboss-logging-log4j> -->
+        <version.org.jboss.logging.jboss-logging-log4j>2.1.2.GA</version.org.jboss.logging.jboss-logging-log4j>
+        <version.org.jboss.logging.jboss-logging-processor>1.0.3.Final</version.org.jboss.logging.jboss-logging-processor>
+        <version.org.jboss.logging.jboss-logging-processor>1.1.0.Final</version.org.jboss.logging.jboss-logging-processor>
+<!--         <version.org.jboss.logging.jboss-logging-spi>2.1.0.GA</version.org.jboss.logging.jboss-logging-spi> -->
+        <version.org.jboss.logging.jboss-logging-spi>2.1.2.GA</version.org.jboss.logging.jboss-logging-spi>
+<!--         <version.org.jboss.man>2.1.0.GA</version.org.jboss.man> -->
+        <version.org.jboss.man>2.1.1.SP2</version.org.jboss.man>
+        <version.org.jboss.microcontainer>2.2.0.M2</version.org.jboss.microcontainer>
+<!--         <version.org.jboss.modules>1.0.2.GA</version.org.jboss.modules> -->
+        <version.org.jboss.modules>1.2.0.Final</version.org.jboss.modules>
+<!--         <version.org.jboss.msc>1.0.1.GA</version.org.jboss.msc> -->
+        <version.org.jboss.msc>1.1.2.Final</version.org.jboss.msc>
+<!--         <version.org.jboss.pojocache>3.0.0.GA</version.org.jboss.pojocache> -->
+<!--         <version.org.jboss.resteasy>2.3.5.Final</version.org.jboss.resteasy> -->
+<!--         <version.org.jboss.security.negotiation>2.1.1.Final</version.org.jboss.security.negotiation> -->
+        <version.org.jboss.shrinkwrap.descriptors>2.0.0-alpha-4</version.org.jboss.shrinkwrap.descriptors>
+<!--         <version.org.jboss.shrinkwrap.resolver>1.0.0-beta-7</version.org.jboss.shrinkwrap.resolver> -->
+        <version.org.jboss.shrinkwrap.resolver>2.0.0-beta-3</version.org.jboss.shrinkwrap.resolver>
+<!--         <version.org.jboss.spec.javax.resource.jboss-connector-api_1.5_spec>1.0.0.Final</version.org.jboss.spec.javax.resource.jboss-connector-api_1.5_spec> -->
+<!--         <version.org.jboss.spec.javax.servlet.3.0>1.0.0.Final</version.org.jboss.spec.javax.servlet.3.0> -->
+        <version.org.jboss.spec.javax.servlet.3.0>1.0.2.Final</version.org.jboss.spec.javax.servlet.3.0>
+        <version.org.jboss.spec.javax.servlet.3.1>1.0.0.Alpha1</version.org.jboss.spec.javax.servlet.3.1>
+<!--         <version.org.jboss.spec.jboss.javaee.6.0>3.0.2.Final</version.org.jboss.spec.jboss.javaee.6.0> -->
+<!--         <version.org.jboss.test>1.1.9.GA</version.org.jboss.test> -->
+        <version.org.jboss.test>1.2.0.Final</version.org.jboss.test>
+        <version.org.jboss.test-jsf.jsf-mock>1.0.0</version.org.jboss.test-jsf.jsf-mock>
+<!--         <version.org.jboss.weld.servlet.weld-servlet>1.0.1-Final</version.org.jboss.weld.servlet.weld-servlet> -->
+        <version.org.jboss.weld.servlet.weld-servlet>1.1.12.Final</version.org.jboss.weld.servlet.weld-servlet>
+<!--         <version.org.jboss.weld.weld-se>1.0.1-Final</version.org.jboss.weld.weld-se> -->
+<!--         <version.org.jbossxb>2.0.2.Beta4</version.org.jbossxb> -->
+        <version.org.jbossxb>2.0.3.GA</version.org.jbossxb>
+        <version.org.jgroups>3.2.8.Final</version.org.jgroups>
+<!--         <version.org.mvel>2.1.Beta8</version.org.mvel> -->
+        <version.org.mvel>2.1.4.Final</version.org.mvel>
+<!--         <version.org.osgi>4.2.0</version.org.osgi> -->
+<!--         <version.org.picketlink>3.0.0.Beta1</version.org.picketlink> -->
+<!--         <version.org.richfaces.richfaces-build-checkstyle>5</version.org.richfaces.richfaces-build-checkstyle> -->
+<!--         <version.org.richfaces>4.2.0.Final</version.org.richfaces> -->
+<!--         <version.org.slf4j>1.5.10</version.org.slf4j> -->
+<!--         <version.org.slf4j>1.6.1</version.org.slf4j> -->
+        <version.org.slf4j>1.7.5</version.org.slf4j>
+<!--         <version.org.springframework.security>3.1.3.RELEASE</version.org.springframework.security> -->
+        <version.org.springframework.security>3.1.3.RELEASE</version.org.springframework.security>
+<!--         <version.org.springframework.webflow>2.3.2.RELEASE</version.org.springframework.webflow> -->
+        <version.org.springframework.webflow>2.3.2.RELEASE</version.org.springframework.webflow>
+<!--         <version.org.springframework.ws>2.1.2.RELEASE</version.org.springframework.ws> -->
+        <version.org.springframework.ws>2.1.3.RELEASE</version.org.springframework.ws>
+<!--         <version.org.springframework>2.5.6.SEC03</version.org.springframework> -->
+<!--         <version.org.springframework>3.0.7.RELEASE</version.org.springframework> -->
+<!--         <version.org.springframework>3.1.4.RELEASE</version.org.springframework> -->
+        <version.org.springframework>3.2.2.RELEASE</version.org.springframework>
+<!--         <version.org.testng>5.10</version.org.testng> -->
+<!--         <version.org.testng>5.14.6</version.org.testng> -->
+<!--         <version.org.testng>6.1.1</version.org.testng> -->
+        <version.org.testng>6.8.1</version.org.testng>
+        <version.org.xerial.snappy>1.0.4.1</version.org.xerial.snappy>
+
+
+<!-- Below are properties taken from the JDF BOM, not sure if they need to be included. -->
+			<!-- Version of Deltaspike -->
+<!-- 			<version.org.apache.deltaspike>0.3-incubating</version.org.apache.deltaspike> -->
+
+			<!-- Versions of JBoss projects -->
+<!-- 			<version.org.infinispan>5.2.4.Final</version.org.infinispan> -->
+<!-- 			<version.org.jboss.arquillian>1.0.3.Final</version.org.jboss.arquillian> -->
+<!-- 			<version.org.jboss.arquillian.extension.drone>1.1.1.Final</version.org.jboss.arquillian.extension.drone> -->
+<!-- 			<version.org.jboss.arquillian.graphene>1.0.0.Final</version.org.jboss.arquillian.graphene> -->
+<!-- 			<version.org.jboss.as.arquillian.container>7.1.3.Final</version.org.jboss.as.arquillian.container> -->
+<!-- 			<version.org.jboss.errai>2.3.0.Final</version.org.jboss.errai> -->
+<!-- 			<version.org.jboss.jbossts.jbossjts>4.16.4.Final</version.org.jboss.jbossts.jbossjts> -->
+<!-- 			<version.org.jboss.logging>3.1.0.GA</version.org.jboss.logging> -->
+<!-- 			<version.org.jboss.logging.processor>1.0.3.Final</version.org.jboss.logging.processor> -->
+<!-- 			<version.org.jboss.resteasy>2.3.5.Final</version.org.jboss.resteasy> -->
+<!-- 			<version.org.jboss.security.negotiation>2.1.1.Final</version.org.jboss.security.negotiation> -->
+<!-- 			<version.org.jboss.spec.jboss.javaee.6.0>3.0.2.Final</version.org.jboss.spec.jboss.javaee.6.0> -->
+<!-- 			<version.org.jboss.shrinkwrap.resolver>1.0.0-beta-7</version.org.jboss.shrinkwrap.resolver> -->
+<!-- 			<version.org.richfaces>4.2.0.Final</version.org.richfaces> -->
+<!-- 			<version.org.picketlink>3.0.0.Beta1</version.org.picketlink> -->
+
+			<!-- Versions of Maven plugins, user must setup them by his/her own -->
+<!-- 			<version.surefire.plugin>2.10</version.surefire.plugin> -->
+<!-- 			<version.org.codehaus.mojo.gwt.maven.plugin>${version.com.google.gwt}</version.org.codehaus.mojo.gwt.maven.plugin> -->
+<!-- 			<version.org.jboss.as.plugins.maven.plugin>7.3.Final</version.org.jboss.as.plugins.maven.plugin> -->
+
+			<!-- Repository Deployment URLs -->
+			<jboss.releases.repo.url>
+				https://repository.jboss.org/nexus/service/local/staging/deploy/maven2/
+			</jboss.releases.repo.url>
+			<jboss.snapshots.repo.url>
+				https://repository.jboss.org/nexus/content/repositories/snapshots/
+			</jboss.snapshots.repo.url>
+	</properties>
+
+	<distributionManagement>
+		<repository>
+			<id>jboss-releases-repository</id>
+			<name>JBoss Releases Repository</name>
+			<url>${jboss.releases.repo.url}</url>
+		</repository>
+		<snapshotRepository>
+			<id>jboss-snapshots-repository</id>
+			<name>JBoss Snapshots Repository</name>
+			<url>${jboss.snapshots.repo.url}</url>
+		</snapshotRepository>
+	</distributionManagement>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>aopalliance</groupId>
+				<artifactId>aopalliance</artifactId>
+				<version>#{version.aopalliance}</version>
+			</dependency>
+			<dependency>
+				<groupId>ch.qos.cal10n</groupId>
+				<artifactId>cal10n-api</artifactId>
+				<version>#{version.ch.qos.cal10n}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.google.appengine</groupId>
+				<artifactId>appengine</artifactId>
+				<version>#{version.com.google.appengine}</version>
+				<type>pom</type>
+			</dependency>
+			<dependency>
+				<groupId>com.google.guava</groupId>
+				<artifactId>guava</artifactId>
+				<version>#{version.com.google.guava}</version>
+				<type>bundle</type>
+			</dependency>
+			<dependency>
+				<groupId>com.google.gwt</groupId>
+				<artifactId>gwt</artifactId>
+				<version>#{version.com.google.gwt}</version>
+				<type>pom</type>
+			</dependency>
+			<dependency>
+				<groupId>com.google.inject</groupId>
+				<artifactId>guice</artifactId>
+				<version>#{version.com.google.inject.guice}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.ocpsoft</groupId>
+				<artifactId>ocpsoft-pretty-faces</artifactId>
+				<version>#{version.com.ocpsoft.ocpsoft-pretty-faces}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.sun.faces</groupId>
+				<artifactId>jsf-impl</artifactId>
+				<version>#{version.com.sun.faces.jsf.impl}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.thoughtworks.paranamer</groupId>
+				<artifactId>paranamer</artifactId>
+				<version>#{version.com.thoughtworks.paranamer}</version>
+			</dependency>
+			<dependency>
+				<groupId>commons-codec</groupId>
+				<artifactId>commons-codec</artifactId>
+				<version>#{version.commons-codec}</version>
+			</dependency>
+			<dependency>
+				<groupId>commons-io</groupId>
+				<artifactId>commons-io</artifactId>
+				<version>#{version.commons-io}</version>
+			</dependency>
+			<dependency>
+				<groupId>commons-lang</groupId>
+				<artifactId>commons-lang</artifactId>
+				<version>#{version.commons-lang}</version>
+			</dependency>
+			<dependency>
+				<groupId>commons-logging</groupId>
+				<artifactId>commons-logging</artifactId>
+				<version>#{version.commons-logging}</version>
+			</dependency>
+			<dependency>
+				<groupId>javax.annotation</groupId>
+				<artifactId>jsr250-api</artifactId>
+				<version>#{version.javax.annotation}</version>
+			</dependency>
+			<dependency>
+				<groupId>javax.el</groupId>
+				<artifactId>el-api</artifactId>
+				<version>#{version.javax.el}</version>
+			</dependency>
+			<dependency>
+				<groupId>javax.enterprise</groupId>
+				<artifactId>cdi-api</artifactId>
+				<version>#{version.javax.enterprise}</version>
+			</dependency>
+			<dependency>
+				<groupId>javax.inject</groupId>
+				<artifactId>javax.inject</artifactId>
+				<version>#{version.javax.inject}</version>
+			</dependency>
+			<dependency>
+				<groupId>javax.jms</groupId>
+				<artifactId>jms</artifactId>
+				<version>#{version.javax.jms}</version>
+			</dependency>
+			<dependency>
+				<groupId>javax.persistence</groupId>
+				<artifactId>persistence-api</artifactId>
+				<version>#{version.javax.persistence}</version>
+			</dependency><dependency>
+				<groupId>javax.servlet</groupId>
+				<artifactId>servlet-api</artifactId>
+				<version>#{version.javax.servlet}</version>
+			</dependency>
+			<dependency>
+				<groupId>javax.transaction</groupId>
+				<artifactId>jta</artifactId>
+				<version>#{version.javax.transaction}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jboss.spec.javax.resource</groupId>
+				<artifactId>jboss-connector-api_1.5_spec</artifactId>
+				<version>#{version.org.jboss.spec.javax.resource.jboss-connector-api-1.5-spec}</version>
+			</dependency>
+			<dependency>
+				<groupId>javax.validation</groupId>
+				<artifactId>validation-api</artifactId>
+				<version>#{version.javax.validation}</version>
+			</dependency>
+			<dependency>
+				<groupId>junit</groupId>
+				<artifactId>junit</artifactId>
+				<version>#{version.junit}</version>
+			</dependency>
+			<dependency>
+				<groupId>log4j</groupId>
+				<artifactId>log4j</artifactId>
+				<version>#{version.log4j}</version>
+				<type>bundle</type>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.avro</groupId>
+				<artifactId>avro</artifactId>
+				<version>#{version.org.apache.avro}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.lucene</groupId>
+				<artifactId>lucene-regex</artifactId>
+				<version>#{version.org.apache.lucene.lucene-regex}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.lucene</groupId>
+				<artifactId>lucene-core</artifactId>
+				<version>#{version.org.apache.lucene}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.servicemix.bundles</groupId>
+				<artifactId>org.apache.servicemix.bundles.xerces</artifactId>
+				<version>#{version.org.apache.servicemix.bundles.xerces}</version>
+				<type>bundle</type>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.tika</groupId>
+				<artifactId>tika-core</artifactId>
+				<version>#{version.org.apache.tika.tika-core}</version>
+				<type>bundle</type>
+			</dependency>
+			<dependency>
+				<groupId>org.aspectj</groupId>
+				<artifactId>aspectjrt</artifactId>
+				<version>#{version.org.aspectj}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.aspectj</groupId>
+				<artifactId>aspectjweaver</artifactId>
+				<version>#{version.org.aspectj}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.codehaus.jackson</groupId>
+				<artifactId>jackson-core-asl</artifactId>
+				<version>#{version.org.codehaus.jackson}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.codehaus.jackson</groupId>
+				<artifactId>jackson-mapper-asl</artifactId>
+				<version>#{version.org.codehaus.jackson}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.glassfish.web</groupId>
+				<artifactId>el-impl</artifactId>
+				<version>#{version.org.glassfish.web.el-impl}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.hibernate.common</groupId>
+				<artifactId>hibernate-commons-annotations</artifactId>
+				<version>#{version.org.hibernate.common.hibernate-commons-annotations}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.hibernate</groupId>
+				<artifactId>hibernate-core</artifactId>
+				<version>#{version.org.hibernate.hibernate-core}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.hibernate</groupId>
+				<artifactId>hibernate-jpamodelgen</artifactId>
+				<version>#{version.org.hibernate.hibernate-jpamodelgen}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.hibernate</groupId>
+				<artifactId>hibernate-search</artifactId>
+				<version>#{version.org.hibernate.hibernate-search}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.hibernate</groupId>
+				<artifactId>hibernate-validator</artifactId>
+				<version>#{version.org.hibernate.hibernate-validator}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.hibernate.javax.persistence</groupId>
+				<artifactId>hibernate-jpa-2.0-api</artifactId>
+				<version>#{version.org.hibernate.javax.persistence}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.hsqldb</groupId>
+				<artifactId>hsqldb</artifactId>
+				<version>#{version.org.hsqldb}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.javassist</groupId>
+				<artifactId>javassist</artifactId>
+				<version>#{version.org.jboss.javassist}</version>
+				<type>bundle</type>
+			</dependency>
+			<dependency>
+				<groupId>org.jboss.arquillian</groupId>
+				<artifactId>arquillian-bom</artifactId>
+				<version>#{version.org.jboss.arquillian.arquillian-bom}</version>
+				<type>pom</type>
+			</dependency>
+            <dependency>
+                <groupId>org.jboss.arquillian.container</groupId>
+                <artifactId>arquillian-glassfish-embedded-30</artifactId>
+                <version>#{version.org.jboss.arquillian.container.arquillian-glassfish-embedded-30}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jboss.arquillian.container</groupId>
+                <artifactId>arquillian-glassfish-managed-3.1</artifactId>
+                <version>#{version.org.jboss.arquillian.container.arquillian-glassfish-managed-3.1}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jboss.arquillian.container</groupId>
+                <artifactId>arquillian-glassfish-remote-3.1</artifactId>
+                <version>#{version.org.jboss.arquillian.container.arquillian-glassfish-remote-3.1}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jboss.arquillian.container</groupId>
+                <artifactId>arquillian-jbossas-managed-6</artifactId>
+                <version>#{version.org.jboss.arquillian.container.arquillian-jbossas-managed-6}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jboss.arquillian.container</groupId>
+                <artifactId>arquillian-jbossas-remote-60</artifactId>
+                <version>#{version.org.jboss.arquillian.container.arquillian-jbossas-remote-60}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jboss.arquillian.container</groupId>
+                <artifactId>arquillian-openshift-express</artifactId>
+                <version>#{version.org.jboss.arquillian.container.arquillian-openshift-express}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jboss.arquillian.container</groupId>
+                <artifactId>arquillian-tomcat-managed-6</artifactId>
+                <version>#{version.org.jboss.arquillian.container.arquillian-tomcat-managed-6}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jboss.arquillian.container</groupId>
+                <artifactId>arquillian-tomcat-managed-7</artifactId>
+                <version>#{version.org.jboss.arquillian.container.arquillian-tomcat-managed-7}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jboss.arquillian.container</groupId>
+                <artifactId>arquillian-tomcat-remote-6</artifactId>
+                <version>#{version.org.jboss.arquillian.container.arquillian-tomcat-remote-6}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jboss.arquillian.container</groupId>
+                <artifactId>arquillian-weld-embedded</artifactId>
+                <version>#{version.org.jboss.arquillian.container.arquillian-weld-embedded}</version>
+            </dependency>
+			<dependency>
+				<groupId>org.jboss.arquillian.extension</groupId>
+				<artifactId>arquillian-android-depchain</artifactId>
+				<version>#{version.org.jboss.arquillian.extension.arquillian-android-depchain}</version>
+				<type>pom</type>
+			</dependency>
+            <dependency>
+                <groupId>org.jboss.arquillian.extension</groupId>
+                <artifactId>arquillian-drone-bom</artifactId>
+                <version>#{version.org.jboss.arquillian.extension.arquillian-drone-bom}</version>
+                <type>pom</type>
+            </dependency>
+            <dependency>
+                <groupId>org.jboss.arquillian.extension</groupId>
+                <artifactId>arquillian-drone-webdriver-depchain</artifactId>
+                <version>#{version.org.jboss.arquillian.extension.arquillian-drone-webdriver-depchain}</version>
+                <type>pom</type>
+            </dependency>
+            <dependency>
+                <groupId>org.jboss.arquillian.extension</groupId>
+                <artifactId>arquillian-phantom-driver</artifactId>
+                <version>#{version.org.jboss.arquillian.extension.arquillian-phantom-driver}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jboss.arquillian.extension</groupId>
+                <artifactId>arquillian-warp-jsf</artifactId>
+                <version>#{version.org.jboss.arquillian.extension.arquillian-warp-jsf}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jboss.arquillian.graphene</groupId>
+                <artifactId>graphene-component-api</artifactId>
+                <version>#{version.org.jboss.arquillian.graphene.graphene-webdriver}</version>
+            </dependency>
+			<dependency>
+				<groupId>org.jboss.arquillian.graphene</groupId>
+				<artifactId>graphene-webdriver</artifactId>
+                <version>#{version.org.jboss.arquillian.graphene.graphene-webdriver}</version>
+				<type>pom</type>
+			</dependency>
+			<dependency>
+				<groupId>org.jboss.arquillian.graphene</groupId>
+				<artifactId>graphene-webdriver-spi</artifactId>
+                <version>#{version.org.jboss.arquillian.graphene.graphene-webdriver}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jboss.arquillian.graphene</groupId>
+				<artifactId>graphene-webdriver-impl</artifactId>
+                <version>#{version.org.jboss.arquillian.graphene.graphene-webdriver}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jboss.arquillian.junit</groupId>
+				<artifactId>arquillian-junit-container</artifactId>
+				<version>#{version.org.jboss.arquillian.junit}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jboss.arquillian.junit</groupId>
+				<artifactId>arquillian-junit-core</artifactId>
+				<version>#{version.org.jboss.arquillian.junit}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jboss.arquillian.protocol</groupId>
+				<artifactId>arquillian-protocol-servlet</artifactId>
+				<version>#{version.org.jboss.arquillian.protocol.arquillian-protocol-servlet}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jboss</groupId>
+				<artifactId>jboss-common-core</artifactId>
+				<version>#{version.org.jboss.common.core}</version>
+			</dependency>
+			<dependency>
+                <groupId>org.jboss</groupId>
+                <artifactId>jboss-mdr</artifactId>
+                <version>#{version.org.jboss.jboss-mdr}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jboss</groupId>
+                <artifactId>jboss-vfs</artifactId>
+                <version>#{version.org.jboss.jboss-vfs}</version>
+            </dependency>
+            <dependency>
+				<groupId>org.jboss.as</groupId>
+				<artifactId>jboss-as-connector</artifactId>
+				<version>#{version.org.jboss.as7}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jboss.byteman</groupId>
+				<artifactId>byteman</artifactId>
+				<version>#{version.org.jboss.byteman}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jboss.byteman</groupId>
+				<artifactId>byteman-bmunit</artifactId>
+				<version>#{version.org.jboss.byteman}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jboss.byteman</groupId>
+				<artifactId>byteman-install</artifactId>
+				<version>#{version.org.jboss.byteman}</version>
+			</dependency>
+			<dependency>
+                <groupId>org.jboss.cl</groupId>
+                <artifactId>jboss-classloading-vfs</artifactId>
+                <version>#{version.org.jboss.classloader}</version>
+            </dependency>
+			<dependency>
+				<groupId>org.jboss.deployers</groupId>
+				<artifactId>jboss-deployers</artifactId>
+				<version>#{version.org.jboss.deployers}</version>
+				<type>pom</type>
+			</dependency><dependency>
+                <groupId>org.jboss.deployers</groupId>
+                <artifactId>jboss-deployers-vfs</artifactId>
+                <version>#{version.org.jboss.deployers}</version>
+            </dependency>
+			<dependency>
+                <groupId>org.jboss.deployers</groupId>
+                <artifactId>jboss-deployers-vfs-spi</artifactId>
+                <version>#{version.org.jboss.deployers}</version>
+            </dependency>
+            <dependency>
+				<groupId>org.jboss.errai.reflections</groupId>
+				<artifactId>reflections</artifactId>
+				<version>#{version.org.jboss.errai}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jboss.ironjacamar</groupId>
+				<artifactId>ironjacamar-core-api</artifactId>
+				<version>#{version.org.jboss.ironjacamar}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jboss.javaee</groupId>
+				<artifactId>jboss-ejb-api</artifactId>
+				<version>#{version.org.jboss.javaee.jboss-ejb-api}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jboss.jbossts.jta</groupId>
+				<artifactId>narayana-jta</artifactId>
+				<version>#{version.org.jboss.jbossts.jta.narayana-jta}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jboss.logging</groupId>
+				<artifactId>jboss-logging</artifactId>
+				<version>#{version.org.jboss.logging}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jboss.logging</groupId>
+				<artifactId>jboss-logging-log4j</artifactId>
+				<version>#{version.org.jboss.logging.jboss-logging-log4j}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jboss.logging</groupId>
+				<artifactId>jboss-logging-processor</artifactId>
+				<version>#{version.org.jboss.logging.jboss-logging-processor}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jboss.logging</groupId>
+				<artifactId>jboss-logging-spi</artifactId>
+				<version>#{version.org.jboss.logging.jboss-logging-spi}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jboss.man</groupId>
+				<artifactId>jboss-managed</artifactId>
+				<version>#{version.org.jboss.man}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jboss.man</groupId>
+				<artifactId>jboss-metatype</artifactId>
+				<version>#{version.org.jboss.man}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jboss.microcontainer</groupId>
+				<artifactId>jboss-dependency</artifactId>
+				<version>#{version.org.jboss.microcontainer}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jboss.microcontainer</groupId>
+				<artifactId>jboss-kernel</artifactId>
+				<version>#{version.org.jboss.microcontainer}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jboss.microcontainer</groupId>
+				<artifactId>jboss-aop-mc-int</artifactId>
+				<version>#{version.org.jboss.microcontainer}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jboss.microcontainer</groupId>
+				<artifactId>jboss-spring-int</artifactId>
+				<version>#{version.org.jboss.microcontainer}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jboss.microcontainer</groupId>
+				<artifactId>jboss-guice-int</artifactId>
+				<version>#{version.org.jboss.microcontainer}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jboss.modules</groupId>
+				<artifactId>jboss-modules</artifactId>
+				<version>#{version.org.jboss.modules}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jboss.msc</groupId>
+				<artifactId>jboss-msc</artifactId>
+				<version>#{version.org.jboss.msc}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jboss.shrinkwrap.descriptors</groupId>
+				<artifactId>shrinkwrap-descriptors-api</artifactId>
+<!-- 				<version>1.1.0-beta-1</version> The maven repo only has the earlier version number.
+                    Not sure if this dependency will work with the higher version number.
+                    Believe yet verify.
+-->
+				<version>#{version.org.jboss.shrinkwrap.descriptors}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jboss.shrinkwrap.descriptors</groupId>
+				<artifactId>shrinkwrap-descriptors-api-jboss</artifactId>
+                <version>#{version.org.jboss.shrinkwrap.descriptors}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jboss.shrinkwrap.descriptors</groupId>
+				<artifactId>shrinkwrap-descriptors-api-javaee</artifactId>
+                <version>#{version.org.jboss.shrinkwrap.descriptors}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jboss.shrinkwrap.descriptors</groupId>
+				<artifactId>shrinkwrap-descriptors-api-base</artifactId>
+                <version>#{version.org.jboss.shrinkwrap.descriptors}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jboss.shrinkwrap.descriptors</groupId>
+				<artifactId>shrinkwrap-descriptors-depchain</artifactId>
+                <version>#{version.org.jboss.shrinkwrap.descriptors}</version>
+				<type>pom</type>
+			</dependency>
+			<dependency>
+				<groupId>org.jboss.shrinkwrap.descriptors</groupId>
+				<artifactId>shrinkwrap-descriptors-gen</artifactId>
+                <version>#{version.org.jboss.shrinkwrap.descriptors}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jboss.shrinkwrap.descriptors</groupId>
+				<artifactId>shrinkwrap-descriptors-impl</artifactId>
+<!--                <version>1.1.0-beta-1</version> The maven repo only has the earlier version number.
+                    Not sure if this dependency will work with the higher version number.
+                    Believe yet verify.
+-->
+                <version>#{version.org.jboss.shrinkwrap.descriptors}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jboss.shrinkwrap.descriptors</groupId>
+				<artifactId>shrinkwrap-descriptors-impl-jboss</artifactId>
+                <version>#{version.org.jboss.shrinkwrap.descriptors}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jboss.shrinkwrap.descriptors</groupId>
+				<artifactId>shrinkwrap-descriptors-impl-javaee</artifactId>
+                <version>#{version.org.jboss.shrinkwrap.descriptors}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jboss.shrinkwrap.descriptors</groupId>
+				<artifactId>shrinkwrap-descriptors-impl-base</artifactId>
+                <version>#{version.org.jboss.shrinkwrap.descriptors}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jboss.shrinkwrap.descriptors</groupId>
+				<artifactId>shrinkwrap-descriptors-spi</artifactId>
+                <version>#{version.org.jboss.shrinkwrap.descriptors}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jboss.shrinkwrap.resolver</groupId>
+				<artifactId>shrinkwrap-resolver-depchain</artifactId>
+				<version>#{version.org.jboss.shrinkwrap.resolver}</version>
+				<type>pom</type>
+			</dependency>
+			<dependency>
+				<groupId>org.jboss.spec.javax.servlet</groupId>
+				<artifactId>jboss-servlet-api_3.0_spec</artifactId>
+				<version>#{version.org.jboss.spec.javax.servlet.3.0}</version>
+			</dependency>
+            <dependency>
+                <groupId>org.jboss.spec.javax.servlet</groupId>
+                <artifactId>jboss-servlet-api_3.1_spec</artifactId>
+                <version>#{version.org.jboss.spec.javax.servlet.3.1}</version>
+            </dependency>
+			<dependency>
+				<groupId>org.jboss.test</groupId>
+				<artifactId>jboss-test</artifactId>
+				<version>#{version.org.jboss.test}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jboss.weld.servlet</groupId>
+				<artifactId>weld-servlet</artifactId>
+				<version>#{version.org.jboss.weld.servlet.weld-servlet}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jboss</groupId>
+				<artifactId>jbossxb</artifactId>
+				<version>#{version.org.jbossxb}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jgroups</groupId>
+				<artifactId>jgroups</artifactId>
+				<version>#{version.org.jgroups}</version>
+				<type>bundle</type>
+			</dependency>
+			<dependency>
+				<groupId>org.mvel</groupId>
+				<artifactId>mvel2</artifactId>
+				<version>#{version.org.mvel}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.slf4j</groupId>
+				<artifactId>slf4j-api</artifactId>
+				<version>#{version.org.slf4j}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.slf4j</groupId>
+				<artifactId>slf4j-log4j12</artifactId>
+                <version>#{version.org.slf4j}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.slf4j</groupId>
+				<artifactId>slf4j-simple</artifactId>
+                <version>#{version.org.slf4j}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.testng</groupId>
+				<artifactId>testng</artifactId>
+				<version>#{version.org.testng}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.xerial.snappy</groupId>
+				<artifactId>snappy-java</artifactId>
+				<version>#{version.org.xerial.snappy}</version>
+				<type>bundle</type>
+			</dependency>
+			
+			
+		</dependencies>
+	</dependencyManagement>
+
+	<profiles>
+		<profile>
+			<id>release</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-gpg-plugin</artifactId>
+						<version>1.4</version>
+						<executions>
+							<execution>
+								<id>sign-artifacts</id>
+								<phase>verify</phase>
+								<goals>
+									<goal>sign</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+		<profile>
+			<id>graph</id>
+			<pluginRepositories>
+				<pluginRepository>
+					<id>mvnplugins.fusesource.org</id>
+					<url>http://mvnplugins.fusesource.org/repo/release</url>
+					<releases>
+						<enabled>true</enabled>
+					</releases>
+				</pluginRepository>
+			</pluginRepositories>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.fusesource.mvnplugins</groupId>
+						<artifactId>maven-graph-plugin</artifactId>
+						<version>1.0</version>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
+
+</project>
