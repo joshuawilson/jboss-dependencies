@@ -36,8 +36,8 @@
 
 	<licenses>
 		<license>
-			<name>GNU Lesser General Public License, Version 2.1</name>
-			<url>http://www.gnu.org/licenses/lgpl-2.1.txt</url>
+			<name>The Apache Software License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
 			<distribution>repo</distribution>
 		</license>
 	</licenses>
@@ -889,8 +889,6 @@
 				<version>#{version.org.xerial.snappy}</version>
 				<type>bundle</type>
 			</dependency>
-			
-			
 		</dependencies>
 	</dependencyManagement>
 
@@ -918,21 +916,21 @@
 		</profile>
 		<profile>
 			<id>graph</id>
-			<pluginRepositories>
-				<pluginRepository>
-					<id>mvnplugins.fusesource.org</id>
-					<url>http://mvnplugins.fusesource.org/repo/release</url>
-					<releases>
-						<enabled>true</enabled>
-					</releases>
-				</pluginRepository>
-			</pluginRepositories>
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>mvnplugins.fusesource.org</id>
+                    <url>http://mvnplugins.fusesource.org/repo/release</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                </pluginRepository>
+            </pluginRepositories>
 			<build>
 				<plugins>
 					<plugin>
-						<groupId>org.fusesource.mvnplugins</groupId>
-						<artifactId>maven-graph-plugin</artifactId>
-						<version>1.0</version>
+			            <groupId>org.fusesource.mvnplugins</groupId>
+			            <artifactId>maven-graph-plugin</artifactId>
+			            <version>1.29</version>
 					</plugin>
 				</plugins>
 			</build>
