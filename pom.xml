@@ -5,8 +5,8 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>org.jboss.bom</groupId>
-	<artifactId>jboss-bom-dependencies</artifactId>
-	<version>0.1-SNAPSHOT</version>
+	<artifactId>jboss-dependencies-master-bom</artifactId>
+	<version>0.2</version>
 
 	<packaging>pom</packaging>
 
@@ -279,615 +279,815 @@
 			<dependency>
 				<groupId>aopalliance</groupId>
 				<artifactId>aopalliance</artifactId>
-				<version>#{version.aopalliance}</version>
+				<version>${version.aopalliance}</version>
 			</dependency>
 			<dependency>
 				<groupId>ch.qos.cal10n</groupId>
 				<artifactId>cal10n-api</artifactId>
-				<version>#{version.ch.qos.cal10n}</version>
+				<version>${version.ch.qos.cal10n}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.google.appengine</groupId>
 				<artifactId>appengine</artifactId>
-				<version>#{version.com.google.appengine}</version>
+				<version>${version.com.google.appengine}</version>
 				<type>pom</type>
 			</dependency>
 			<dependency>
 				<groupId>com.google.guava</groupId>
 				<artifactId>guava</artifactId>
-				<version>#{version.com.google.guava}</version>
+				<version>${version.com.google.guava}</version>
 				<type>bundle</type>
 			</dependency>
 			<dependency>
 				<groupId>com.google.gwt</groupId>
 				<artifactId>gwt</artifactId>
-				<version>#{version.com.google.gwt}</version>
+				<version>${version.com.google.gwt}</version>
 				<type>pom</type>
 			</dependency>
 			<dependency>
 				<groupId>com.google.inject</groupId>
 				<artifactId>guice</artifactId>
-				<version>#{version.com.google.inject.guice}</version>
+				<version>${version.com.google.inject.guice}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.ocpsoft</groupId>
 				<artifactId>ocpsoft-pretty-faces</artifactId>
-				<version>#{version.com.ocpsoft.ocpsoft-pretty-faces}</version>
+				<version>${version.com.ocpsoft.ocpsoft-pretty-faces}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.sun.faces</groupId>
 				<artifactId>jsf-impl</artifactId>
-				<version>#{version.com.sun.faces.jsf.impl}</version>
+				<version>${version.com.sun.faces.jsf.impl}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.thoughtworks.paranamer</groupId>
 				<artifactId>paranamer</artifactId>
-				<version>#{version.com.thoughtworks.paranamer}</version>
+				<version>${version.com.thoughtworks.paranamer}</version>
 			</dependency>
 			<dependency>
 				<groupId>commons-codec</groupId>
 				<artifactId>commons-codec</artifactId>
-				<version>#{version.commons-codec}</version>
+				<version>${version.commons-codec}</version>
 			</dependency>
 			<dependency>
 				<groupId>commons-io</groupId>
 				<artifactId>commons-io</artifactId>
-				<version>#{version.commons-io}</version>
+				<version>${version.commons-io}</version>
 			</dependency>
 			<dependency>
 				<groupId>commons-lang</groupId>
 				<artifactId>commons-lang</artifactId>
-				<version>#{version.commons-lang}</version>
+				<version>${version.commons-lang}</version>
 			</dependency>
 			<dependency>
 				<groupId>commons-logging</groupId>
 				<artifactId>commons-logging</artifactId>
-				<version>#{version.commons-logging}</version>
+				<version>${version.commons-logging}</version>
 			</dependency>
 			<dependency>
 				<groupId>javax.annotation</groupId>
 				<artifactId>jsr250-api</artifactId>
-				<version>#{version.javax.annotation}</version>
+				<version>${version.javax.annotation}</version>
 			</dependency>
 			<dependency>
 				<groupId>javax.el</groupId>
 				<artifactId>el-api</artifactId>
-				<version>#{version.javax.el}</version>
+				<version>${version.javax.el}</version>
 			</dependency>
 			<dependency>
 				<groupId>javax.enterprise</groupId>
 				<artifactId>cdi-api</artifactId>
-				<version>#{version.javax.enterprise}</version>
+				<version>${version.javax.enterprise}</version>
 			</dependency>
 			<dependency>
 				<groupId>javax.inject</groupId>
 				<artifactId>javax.inject</artifactId>
-				<version>#{version.javax.inject}</version>
+				<version>${version.javax.inject}</version>
 			</dependency>
 			<dependency>
 				<groupId>javax.jms</groupId>
 				<artifactId>jms</artifactId>
-				<version>#{version.javax.jms}</version>
+				<version>${version.javax.jms}</version>
 			</dependency>
 			<dependency>
 				<groupId>javax.persistence</groupId>
 				<artifactId>persistence-api</artifactId>
-				<version>#{version.javax.persistence}</version>
+				<version>${version.javax.persistence}</version>
 			</dependency><dependency>
 				<groupId>javax.servlet</groupId>
 				<artifactId>servlet-api</artifactId>
-				<version>#{version.javax.servlet}</version>
+				<version>${version.javax.servlet}</version>
 			</dependency>
 			<dependency>
 				<groupId>javax.transaction</groupId>
 				<artifactId>jta</artifactId>
-				<version>#{version.javax.transaction}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.jboss.spec.javax.resource</groupId>
-				<artifactId>jboss-connector-api_1.5_spec</artifactId>
-				<version>#{version.org.jboss.spec.javax.resource.jboss-connector-api-1.5-spec}</version>
+				<version>${version.javax.transaction}</version>
 			</dependency>
 			<dependency>
 				<groupId>javax.validation</groupId>
 				<artifactId>validation-api</artifactId>
-				<version>#{version.javax.validation}</version>
+				<version>${version.javax.validation}</version>
 			</dependency>
 			<dependency>
 				<groupId>junit</groupId>
 				<artifactId>junit</artifactId>
-				<version>#{version.junit}</version>
+				<version>${version.junit}</version>
+				<scope>test</scope>
 			</dependency>
 			<dependency>
 				<groupId>log4j</groupId>
 				<artifactId>log4j</artifactId>
-				<version>#{version.log4j}</version>
+				<version>${version.log4j}</version>
 				<type>bundle</type>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.avro</groupId>
 				<artifactId>avro</artifactId>
-				<version>#{version.org.apache.avro}</version>
+				<version>${version.org.apache.avro}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.lucene</groupId>
 				<artifactId>lucene-regex</artifactId>
-				<version>#{version.org.apache.lucene.lucene-regex}</version>
+				<version>${version.org.apache.lucene.lucene-regex}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.lucene</groupId>
 				<artifactId>lucene-core</artifactId>
-				<version>#{version.org.apache.lucene}</version>
+				<version>${version.org.apache.lucene}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.servicemix.bundles</groupId>
 				<artifactId>org.apache.servicemix.bundles.xerces</artifactId>
-				<version>#{version.org.apache.servicemix.bundles.xerces}</version>
+				<version>${version.org.apache.servicemix.bundles.xerces}</version>
 				<type>bundle</type>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.tika</groupId>
 				<artifactId>tika-core</artifactId>
-				<version>#{version.org.apache.tika.tika-core}</version>
+				<version>${version.org.apache.tika.tika-core}</version>
 				<type>bundle</type>
 			</dependency>
 			<dependency>
 				<groupId>org.aspectj</groupId>
 				<artifactId>aspectjrt</artifactId>
-				<version>#{version.org.aspectj}</version>
+				<version>${version.org.aspectj}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.aspectj</groupId>
 				<artifactId>aspectjweaver</artifactId>
-				<version>#{version.org.aspectj}</version>
+				<version>${version.org.aspectj}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.codehaus.jackson</groupId>
 				<artifactId>jackson-core-asl</artifactId>
-				<version>#{version.org.codehaus.jackson}</version>
+				<version>${version.org.codehaus.jackson}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.codehaus.jackson</groupId>
 				<artifactId>jackson-mapper-asl</artifactId>
-				<version>#{version.org.codehaus.jackson}</version>
+				<version>${version.org.codehaus.jackson}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.glassfish.web</groupId>
 				<artifactId>el-impl</artifactId>
-				<version>#{version.org.glassfish.web.el-impl}</version>
+				<version>${version.org.glassfish.web.el-impl}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.hibernate.common</groupId>
 				<artifactId>hibernate-commons-annotations</artifactId>
-				<version>#{version.org.hibernate.common.hibernate-commons-annotations}</version>
+				<version>${version.org.hibernate.common.hibernate-commons-annotations}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.hibernate</groupId>
 				<artifactId>hibernate-core</artifactId>
-				<version>#{version.org.hibernate.hibernate-core}</version>
+				<version>${version.org.hibernate.hibernate-core}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.hibernate</groupId>
 				<artifactId>hibernate-jpamodelgen</artifactId>
-				<version>#{version.org.hibernate.hibernate-jpamodelgen}</version>
+				<version>${version.org.hibernate.hibernate-jpamodelgen}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.hibernate</groupId>
 				<artifactId>hibernate-search</artifactId>
-				<version>#{version.org.hibernate.hibernate-search}</version>
+				<version>${version.org.hibernate.hibernate-search}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.hibernate</groupId>
 				<artifactId>hibernate-validator</artifactId>
-				<version>#{version.org.hibernate.hibernate-validator}</version>
+				<version>${version.org.hibernate.hibernate-validator}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.hibernate.javax.persistence</groupId>
 				<artifactId>hibernate-jpa-2.0-api</artifactId>
-				<version>#{version.org.hibernate.javax.persistence}</version>
+				<version>${version.org.hibernate.javax.persistence}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.hsqldb</groupId>
 				<artifactId>hsqldb</artifactId>
-				<version>#{version.org.hsqldb}</version>
+				<version>${version.org.hsqldb}</version>
 			</dependency>
-			<dependency>
-				<groupId>org.javassist</groupId>
-				<artifactId>javassist</artifactId>
-				<version>#{version.org.jboss.javassist}</version>
-				<type>bundle</type>
-			</dependency>
+<!-- 			<dependency> -->
+<!-- 				<groupId>org.javassist</groupId> -->
+<!-- 				<artifactId>javassist</artifactId> -->
+<!-- 				<version>${version.org.jboss.javassist}</version> -->
+<!-- 				<type>bundle</type> -->
+<!-- 			</dependency> -->
+            <dependency>
+                <groupId>org.jboss</groupId>
+                <artifactId>javassist</artifactId>
+                <version>3.7.1.GA</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.jboss</groupId>
+                <artifactId>jboss-common-core</artifactId>
+                <version>${version.org.jboss.common.core}</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.jboss</groupId>
+                <artifactId>jboss-mdr</artifactId>
+                <version>${version.org.jboss.jboss-mdr}</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.jboss</groupId>
+                <artifactId>jboss-vfs</artifactId>
+                <version>${version.org.jboss.jboss-vfs}</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.jboss</groupId>
+                <artifactId>jbossxb</artifactId>
+                <version>${version.org.jbossxb}</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.jboss.aop</groupId>
+                <artifactId>jboss-aop</artifactId>
+                <version>2.2.2.GA</version>
+                <scope>provided</scope>
+                <exclusions>
+                    <exclusion>
+                        <groupId>trove</groupId>
+                        <artifactId>trove</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
 			<dependency>
 				<groupId>org.jboss.arquillian</groupId>
 				<artifactId>arquillian-bom</artifactId>
-				<version>#{version.org.jboss.arquillian.arquillian-bom}</version>
+				<version>${version.org.jboss.arquillian.arquillian-bom}</version>
 				<type>pom</type>
 			</dependency>
             <dependency>
                 <groupId>org.jboss.arquillian.container</groupId>
                 <artifactId>arquillian-glassfish-embedded-30</artifactId>
-                <version>#{version.org.jboss.arquillian.container.arquillian-glassfish-embedded-30}</version>
+                <version>${version.org.jboss.arquillian.container.arquillian-glassfish-embedded-30}</version>
             </dependency>
             <dependency>
                 <groupId>org.jboss.arquillian.container</groupId>
                 <artifactId>arquillian-glassfish-managed-3.1</artifactId>
-                <version>#{version.org.jboss.arquillian.container.arquillian-glassfish-managed-3.1}</version>
+                <version>${version.org.jboss.arquillian.container.arquillian-glassfish-managed-3.1}</version>
             </dependency>
             <dependency>
                 <groupId>org.jboss.arquillian.container</groupId>
                 <artifactId>arquillian-glassfish-remote-3.1</artifactId>
-                <version>#{version.org.jboss.arquillian.container.arquillian-glassfish-remote-3.1}</version>
+                <version>${version.org.jboss.arquillian.container.arquillian-glassfish-remote-3.1}</version>
             </dependency>
             <dependency>
                 <groupId>org.jboss.arquillian.container</groupId>
                 <artifactId>arquillian-jbossas-managed-6</artifactId>
-                <version>#{version.org.jboss.arquillian.container.arquillian-jbossas-managed-6}</version>
+                <version>${version.org.jboss.arquillian.container.arquillian-jbossas-managed-6}</version>
             </dependency>
             <dependency>
                 <groupId>org.jboss.arquillian.container</groupId>
                 <artifactId>arquillian-jbossas-remote-60</artifactId>
-                <version>#{version.org.jboss.arquillian.container.arquillian-jbossas-remote-60}</version>
+                <version>${version.org.jboss.arquillian.container.arquillian-jbossas-remote-60}</version>
             </dependency>
             <dependency>
                 <groupId>org.jboss.arquillian.container</groupId>
                 <artifactId>arquillian-openshift-express</artifactId>
-                <version>#{version.org.jboss.arquillian.container.arquillian-openshift-express}</version>
+                <version>${version.org.jboss.arquillian.container.arquillian-openshift-express}</version>
             </dependency>
             <dependency>
                 <groupId>org.jboss.arquillian.container</groupId>
                 <artifactId>arquillian-tomcat-managed-6</artifactId>
-                <version>#{version.org.jboss.arquillian.container.arquillian-tomcat-managed-6}</version>
+                <version>${version.org.jboss.arquillian.container.arquillian-tomcat-managed-6}</version>
             </dependency>
             <dependency>
                 <groupId>org.jboss.arquillian.container</groupId>
                 <artifactId>arquillian-tomcat-managed-7</artifactId>
-                <version>#{version.org.jboss.arquillian.container.arquillian-tomcat-managed-7}</version>
+                <version>${version.org.jboss.arquillian.container.arquillian-tomcat-managed-7}</version>
             </dependency>
             <dependency>
                 <groupId>org.jboss.arquillian.container</groupId>
                 <artifactId>arquillian-tomcat-remote-6</artifactId>
-                <version>#{version.org.jboss.arquillian.container.arquillian-tomcat-remote-6}</version>
+                <version>${version.org.jboss.arquillian.container.arquillian-tomcat-remote-6}</version>
             </dependency>
             <dependency>
                 <groupId>org.jboss.arquillian.container</groupId>
                 <artifactId>arquillian-weld-embedded</artifactId>
-                <version>#{version.org.jboss.arquillian.container.arquillian-weld-embedded}</version>
+                <version>${version.org.jboss.arquillian.container.arquillian-weld-embedded}</version>
             </dependency>
 			<dependency>
 				<groupId>org.jboss.arquillian.extension</groupId>
 				<artifactId>arquillian-android-depchain</artifactId>
-				<version>#{version.org.jboss.arquillian.extension.arquillian-android-depchain}</version>
+				<version>${version.org.jboss.arquillian.extension.arquillian-android-depchain}</version>
 				<type>pom</type>
 			</dependency>
             <dependency>
                 <groupId>org.jboss.arquillian.extension</groupId>
                 <artifactId>arquillian-drone-bom</artifactId>
-                <version>#{version.org.jboss.arquillian.extension.arquillian-drone-bom}</version>
+                <version>${version.org.jboss.arquillian.extension.arquillian-drone-bom}</version>
                 <type>pom</type>
             </dependency>
             <dependency>
                 <groupId>org.jboss.arquillian.extension</groupId>
                 <artifactId>arquillian-drone-webdriver-depchain</artifactId>
-                <version>#{version.org.jboss.arquillian.extension.arquillian-drone-webdriver-depchain}</version>
+                <version>${version.org.jboss.arquillian.extension.arquillian-drone-webdriver-depchain}</version>
                 <type>pom</type>
             </dependency>
             <dependency>
                 <groupId>org.jboss.arquillian.extension</groupId>
                 <artifactId>arquillian-phantom-driver</artifactId>
-                <version>#{version.org.jboss.arquillian.extension.arquillian-phantom-driver}</version>
+                <version>${version.org.jboss.arquillian.extension.arquillian-phantom-driver}</version>
             </dependency>
             <dependency>
                 <groupId>org.jboss.arquillian.extension</groupId>
                 <artifactId>arquillian-warp-jsf</artifactId>
-                <version>#{version.org.jboss.arquillian.extension.arquillian-warp-jsf}</version>
+                <version>${version.org.jboss.arquillian.extension.arquillian-warp-jsf}</version>
             </dependency>
             <dependency>
                 <groupId>org.jboss.arquillian.graphene</groupId>
                 <artifactId>graphene-component-api</artifactId>
-                <version>#{version.org.jboss.arquillian.graphene.graphene-webdriver}</version>
+                <version>${version.org.jboss.arquillian.graphene.graphene-webdriver}</version>
             </dependency>
 			<dependency>
 				<groupId>org.jboss.arquillian.graphene</groupId>
 				<artifactId>graphene-webdriver</artifactId>
-                <version>#{version.org.jboss.arquillian.graphene.graphene-webdriver}</version>
+                <version>${version.org.jboss.arquillian.graphene.graphene-webdriver}</version>
 				<type>pom</type>
 			</dependency>
 			<dependency>
 				<groupId>org.jboss.arquillian.graphene</groupId>
 				<artifactId>graphene-webdriver-spi</artifactId>
-                <version>#{version.org.jboss.arquillian.graphene.graphene-webdriver}</version>
+                <version>${version.org.jboss.arquillian.graphene.graphene-webdriver}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.jboss.arquillian.graphene</groupId>
 				<artifactId>graphene-webdriver-impl</artifactId>
-                <version>#{version.org.jboss.arquillian.graphene.graphene-webdriver}</version>
+                <version>${version.org.jboss.arquillian.graphene.graphene-webdriver}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.jboss.arquillian.junit</groupId>
 				<artifactId>arquillian-junit-container</artifactId>
-				<version>#{version.org.jboss.arquillian.junit}</version>
+				<version>${version.org.jboss.arquillian.junit}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.jboss.arquillian.junit</groupId>
 				<artifactId>arquillian-junit-core</artifactId>
-				<version>#{version.org.jboss.arquillian.junit}</version>
+				<version>${version.org.jboss.arquillian.junit}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.jboss.arquillian.protocol</groupId>
 				<artifactId>arquillian-protocol-servlet</artifactId>
-				<version>#{version.org.jboss.arquillian.protocol.arquillian-protocol-servlet}</version>
+				<version>${version.org.jboss.arquillian.protocol.arquillian-protocol-servlet}</version>
 			</dependency>
-			<dependency>
-				<groupId>org.jboss</groupId>
-				<artifactId>jboss-common-core</artifactId>
-				<version>#{version.org.jboss.common.core}</version>
-			</dependency>
-			<dependency>
-                <groupId>org.jboss</groupId>
-                <artifactId>jboss-mdr</artifactId>
-                <version>#{version.org.jboss.jboss-mdr}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.jboss</groupId>
-                <artifactId>jboss-vfs</artifactId>
-                <version>#{version.org.jboss.jboss-vfs}</version>
-            </dependency>
             <dependency>
 				<groupId>org.jboss.as</groupId>
 				<artifactId>jboss-as-connector</artifactId>
-				<version>#{version.org.jboss.as7}</version>
+				<version>${version.org.jboss.as7}</version>
 			</dependency>
+            <dependency>
+                <groupId>org.jboss.as</groupId>
+                <artifactId>jboss-as-controller</artifactId>
+                <version>${version.org.jboss.as7}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jboss.as</groupId>
+                <artifactId>jboss-as-ee</artifactId>
+                <version>${version.org.jboss.as7}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jboss.as</groupId>
+                <artifactId>jboss-as-naming</artifactId>
+                <version>${version.org.jboss.as7}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jboss.as</groupId>
+                <artifactId>jboss-as-server</artifactId>
+                <version>${version.org.jboss.as7}</version>
+            </dependency>
 			<dependency>
 				<groupId>org.jboss.byteman</groupId>
 				<artifactId>byteman</artifactId>
-				<version>#{version.org.jboss.byteman}</version>
+				<version>${version.org.jboss.byteman}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.jboss.byteman</groupId>
 				<artifactId>byteman-bmunit</artifactId>
-				<version>#{version.org.jboss.byteman}</version>
+				<version>${version.org.jboss.byteman}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.jboss.byteman</groupId>
 				<artifactId>byteman-install</artifactId>
-				<version>#{version.org.jboss.byteman}</version>
+				<version>${version.org.jboss.byteman}</version>
 			</dependency>
+            <dependency>
+                <groupId>org.jboss.cache</groupId>
+                <artifactId>jbosscache-pojo</artifactId>
+                <version>3.0.0.GA</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.jboss.cl</groupId>
+                <artifactId>jboss-classloader</artifactId>
+                <version>2.2.1.GA</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.jboss.cl</groupId>
+                <artifactId>jboss-classloading</artifactId>
+                <version>2.2.1.GA</version>
+                <scope>provided</scope>
+            </dependency>
 			<dependency>
                 <groupId>org.jboss.cl</groupId>
                 <artifactId>jboss-classloading-vfs</artifactId>
-                <version>#{version.org.jboss.classloader}</version>
+                <version>${version.org.jboss.classloader}</version>
+                 <scope>provided</scope>
             </dependency>
 			<dependency>
 				<groupId>org.jboss.deployers</groupId>
 				<artifactId>jboss-deployers</artifactId>
-				<version>#{version.org.jboss.deployers}</version>
+				<version>${version.org.jboss.deployers}</version>
+                <scope>provided</scope>
 				<type>pom</type>
-			</dependency><dependency>
+			</dependency>
+            <dependency>
+                <groupId>org.jboss.deployers</groupId>
+                <artifactId>jboss-deployers-client</artifactId>
+                <version>2.2.2.GA</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.jboss.deployers</groupId>
+                <artifactId>jboss-deployers-client-spi</artifactId>
+                <version>2.2.2.GA</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.jboss.deployers</groupId>
+                <artifactId>jboss-deployers-core-spi</artifactId>
+                <version>${version.org.jboss.deployers}</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.jboss.deployers</groupId>
+                <artifactId>jboss-deployers-impl</artifactId>
+                <version>2.2.2.GA</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.jboss</groupId>
+                        <artifactId>javassist</artifactId>
+                    </exclusion>
+                </exclusions>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.jboss.deployers</groupId>
+                <artifactId>jboss-deployers-spi</artifactId>
+                <version>${version.org.jboss.deployers}</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.jboss.deployers</groupId>
+                <artifactId>jboss-deployers-structure-spi</artifactId>
+                <version>${version.org.jboss.deployers}</version>
+                <scope>provided</scope>
+            </dependency>
+			<dependency>
                 <groupId>org.jboss.deployers</groupId>
                 <artifactId>jboss-deployers-vfs</artifactId>
-                <version>#{version.org.jboss.deployers}</version>
+                <version>${version.org.jboss.deployers}</version>
+                <scope>provided</scope>
+            </dependency>
+			<dependency>
+                <groupId>org.jboss.deployers</groupId>
+                <artifactId>jboss-deployers-vfs</artifactId>
+                <version>${version.org.jboss.deployers}</version>
+                <type>test-jar</type>
+                <scope>test</scope>
             </dependency>
 			<dependency>
                 <groupId>org.jboss.deployers</groupId>
                 <artifactId>jboss-deployers-vfs-spi</artifactId>
-                <version>#{version.org.jboss.deployers}</version>
+                <version>${version.org.jboss.deployers}</version>
+                <scope>provided</scope>
             </dependency>
             <dependency>
 				<groupId>org.jboss.errai.reflections</groupId>
 				<artifactId>reflections</artifactId>
-				<version>#{version.org.jboss.errai}</version>
+				<version>${version.org.jboss.errai}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.jboss.ironjacamar</groupId>
 				<artifactId>ironjacamar-core-api</artifactId>
-				<version>#{version.org.jboss.ironjacamar}</version>
+				<version>${version.org.jboss.ironjacamar}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.jboss.javaee</groupId>
 				<artifactId>jboss-ejb-api</artifactId>
-				<version>#{version.org.jboss.javaee.jboss-ejb-api}</version>
+				<version>${version.org.jboss.javaee.jboss-ejb-api}</version>
+                <scope>provided</scope>
 			</dependency>
 			<dependency>
 				<groupId>org.jboss.jbossts.jta</groupId>
 				<artifactId>narayana-jta</artifactId>
-				<version>#{version.org.jboss.jbossts.jta.narayana-jta}</version>
+				<version>${version.org.jboss.jbossts.jta.narayana-jta}</version>
 			</dependency>
+            <dependency>
+                <groupId>org.jboss.kernel</groupId>
+                <artifactId>jboss-aop-mc-int</artifactId>
+                <version>2.2.0.SP2</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.jboss.kernel</groupId>
+                <artifactId>jboss-dependency</artifactId>
+                <version>2.2.0.SP2</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.jboss.kernel</groupId>
+                <artifactId>jboss-guice-int</artifactId>
+                <version>2.2.0.SP2</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jboss.kernel</groupId>
+                <artifactId>jboss-kernel</artifactId>
+                <version>2.2.0.SP2</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.jboss.kernel</groupId>
+                <artifactId>jboss-spring-int</artifactId>
+                <version>2.2.0.SP2</version>
+                <scope>provided</scope>
+            </dependency>
 			<dependency>
 				<groupId>org.jboss.logging</groupId>
 				<artifactId>jboss-logging</artifactId>
-				<version>#{version.org.jboss.logging}</version>
+				<version>${version.org.jboss.logging}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.jboss.logging</groupId>
 				<artifactId>jboss-logging-log4j</artifactId>
-				<version>#{version.org.jboss.logging.jboss-logging-log4j}</version>
+				<version>${version.org.jboss.logging.jboss-logging-log4j}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.jboss.logging</groupId>
 				<artifactId>jboss-logging-processor</artifactId>
-				<version>#{version.org.jboss.logging.jboss-logging-processor}</version>
+				<version>${version.org.jboss.logging.jboss-logging-processor}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.jboss.logging</groupId>
 				<artifactId>jboss-logging-spi</artifactId>
-				<version>#{version.org.jboss.logging.jboss-logging-spi}</version>
+				<version>${version.org.jboss.logging.jboss-logging-spi}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.jboss.man</groupId>
 				<artifactId>jboss-managed</artifactId>
-				<version>#{version.org.jboss.man}</version>
+				<version>${version.org.jboss.man}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.jboss.man</groupId>
 				<artifactId>jboss-metatype</artifactId>
-				<version>#{version.org.jboss.man}</version>
+				<version>${version.org.jboss.man}</version>
 			</dependency>
-			<dependency>
-				<groupId>org.jboss.microcontainer</groupId>
-				<artifactId>jboss-dependency</artifactId>
-				<version>#{version.org.jboss.microcontainer}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.jboss.microcontainer</groupId>
-				<artifactId>jboss-kernel</artifactId>
-				<version>#{version.org.jboss.microcontainer}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.jboss.microcontainer</groupId>
-				<artifactId>jboss-aop-mc-int</artifactId>
-				<version>#{version.org.jboss.microcontainer}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.jboss.microcontainer</groupId>
-				<artifactId>jboss-spring-int</artifactId>
-				<version>#{version.org.jboss.microcontainer}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.jboss.microcontainer</groupId>
-				<artifactId>jboss-guice-int</artifactId>
-				<version>#{version.org.jboss.microcontainer}</version>
-			</dependency>
+<!-- 			<dependency> -->
+<!-- 				<groupId>org.jboss.microcontainer</groupId> -->
+<!-- 				<artifactId>jboss-dependency</artifactId> -->
+<!-- 				<version>${version.org.jboss.microcontainer}</version> -->
+<!-- 			</dependency> -->
+<!-- 			<dependency> -->
+<!-- 				<groupId>org.jboss.microcontainer</groupId> -->
+<!-- 				<artifactId>jboss-kernel</artifactId> -->
+<!-- 				<version>${version.org.jboss.microcontainer}</version> -->
+<!-- 			</dependency> -->
+<!-- 			<dependency> -->
+<!-- 				<groupId>org.jboss.microcontainer</groupId> -->
+<!-- 				<artifactId>jboss-aop-mc-int</artifactId> -->
+<!-- 				<version>${version.org.jboss.microcontainer}</version> -->
+<!-- 			</dependency> -->
+<!-- 			<dependency> -->
+<!-- 				<groupId>org.jboss.microcontainer</groupId> -->
+<!-- 				<artifactId>jboss-spring-int</artifactId> -->
+<!-- 				<version>${version.org.jboss.microcontainer}</version> -->
+<!-- 			</dependency> -->
+<!-- 			<dependency> -->
+<!-- 				<groupId>org.jboss.microcontainer</groupId> -->
+<!-- 				<artifactId>jboss-guice-int</artifactId> -->
+<!-- 				<version>${version.org.jboss.microcontainer}</version> -->
+<!-- 			</dependency> -->
 			<dependency>
 				<groupId>org.jboss.modules</groupId>
 				<artifactId>jboss-modules</artifactId>
-				<version>#{version.org.jboss.modules}</version>
+				<version>${version.org.jboss.modules}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.jboss.msc</groupId>
 				<artifactId>jboss-msc</artifactId>
-				<version>#{version.org.jboss.msc}</version>
+				<version>${version.org.jboss.msc}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.jboss.shrinkwrap.descriptors</groupId>
 				<artifactId>shrinkwrap-descriptors-api</artifactId>
 <!-- 				<version>1.1.0-beta-1</version> The maven repo only has the earlier version number.
                     Not sure if this dependency will work with the higher version number.
-                    Believe yet verify.
+                    Trust yet verify.
 -->
-				<version>#{version.org.jboss.shrinkwrap.descriptors}</version>
+				<version>${version.org.jboss.shrinkwrap.descriptors}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.jboss.shrinkwrap.descriptors</groupId>
 				<artifactId>shrinkwrap-descriptors-api-jboss</artifactId>
-                <version>#{version.org.jboss.shrinkwrap.descriptors}</version>
+                <version>${version.org.jboss.shrinkwrap.descriptors}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.jboss.shrinkwrap.descriptors</groupId>
 				<artifactId>shrinkwrap-descriptors-api-javaee</artifactId>
-                <version>#{version.org.jboss.shrinkwrap.descriptors}</version>
+                <version>${version.org.jboss.shrinkwrap.descriptors}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.jboss.shrinkwrap.descriptors</groupId>
 				<artifactId>shrinkwrap-descriptors-api-base</artifactId>
-                <version>#{version.org.jboss.shrinkwrap.descriptors}</version>
+                <version>${version.org.jboss.shrinkwrap.descriptors}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.jboss.shrinkwrap.descriptors</groupId>
 				<artifactId>shrinkwrap-descriptors-depchain</artifactId>
-                <version>#{version.org.jboss.shrinkwrap.descriptors}</version>
+                <version>${version.org.jboss.shrinkwrap.descriptors}</version>
 				<type>pom</type>
 			</dependency>
 			<dependency>
 				<groupId>org.jboss.shrinkwrap.descriptors</groupId>
 				<artifactId>shrinkwrap-descriptors-gen</artifactId>
-                <version>#{version.org.jboss.shrinkwrap.descriptors}</version>
+                <version>${version.org.jboss.shrinkwrap.descriptors}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.jboss.shrinkwrap.descriptors</groupId>
 				<artifactId>shrinkwrap-descriptors-impl</artifactId>
 <!--                <version>1.1.0-beta-1</version> The maven repo only has the earlier version number.
                     Not sure if this dependency will work with the higher version number.
-                    Believe yet verify.
+                    Trust yet verify.
 -->
-                <version>#{version.org.jboss.shrinkwrap.descriptors}</version>
+                <version>${version.org.jboss.shrinkwrap.descriptors}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.jboss.shrinkwrap.descriptors</groupId>
 				<artifactId>shrinkwrap-descriptors-impl-jboss</artifactId>
-                <version>#{version.org.jboss.shrinkwrap.descriptors}</version>
+                <version>${version.org.jboss.shrinkwrap.descriptors}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.jboss.shrinkwrap.descriptors</groupId>
 				<artifactId>shrinkwrap-descriptors-impl-javaee</artifactId>
-                <version>#{version.org.jboss.shrinkwrap.descriptors}</version>
+                <version>${version.org.jboss.shrinkwrap.descriptors}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.jboss.shrinkwrap.descriptors</groupId>
 				<artifactId>shrinkwrap-descriptors-impl-base</artifactId>
-                <version>#{version.org.jboss.shrinkwrap.descriptors}</version>
+                <version>${version.org.jboss.shrinkwrap.descriptors}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.jboss.shrinkwrap.descriptors</groupId>
 				<artifactId>shrinkwrap-descriptors-spi</artifactId>
-                <version>#{version.org.jboss.shrinkwrap.descriptors}</version>
+                <version>${version.org.jboss.shrinkwrap.descriptors}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.jboss.shrinkwrap.resolver</groupId>
 				<artifactId>shrinkwrap-resolver-depchain</artifactId>
-				<version>#{version.org.jboss.shrinkwrap.resolver}</version>
+				<version>${version.org.jboss.shrinkwrap.resolver}</version>
 				<type>pom</type>
 			</dependency>
+            <dependency>
+                <groupId>org.jboss.spec.javax.resource</groupId>
+                <artifactId>jboss-connector-api_1.5_spec</artifactId>
+                <version>${version.org.jboss.spec.javax.resource.jboss-connector-api-1.5-spec}</version>
+            </dependency>
 			<dependency>
 				<groupId>org.jboss.spec.javax.servlet</groupId>
 				<artifactId>jboss-servlet-api_3.0_spec</artifactId>
-				<version>#{version.org.jboss.spec.javax.servlet.3.0}</version>
+				<version>${version.org.jboss.spec.javax.servlet.3.0}</version>
 			</dependency>
             <dependency>
                 <groupId>org.jboss.spec.javax.servlet</groupId>
                 <artifactId>jboss-servlet-api_3.1_spec</artifactId>
-                <version>#{version.org.jboss.spec.javax.servlet.3.1}</version>
+                <version>${version.org.jboss.spec.javax.servlet.3.1}</version>
             </dependency>
 			<dependency>
 				<groupId>org.jboss.test</groupId>
 				<artifactId>jboss-test</artifactId>
-				<version>#{version.org.jboss.test}</version>
+				<version>${version.org.jboss.test}</version>
+				<scope>test</scope>
 			</dependency>
 			<dependency>
 				<groupId>org.jboss.weld.servlet</groupId>
 				<artifactId>weld-servlet</artifactId>
-				<version>#{version.org.jboss.weld.servlet.weld-servlet}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.jboss</groupId>
-				<artifactId>jbossxb</artifactId>
-				<version>#{version.org.jbossxb}</version>
+				<version>${version.org.jboss.weld.servlet.weld-servlet}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.jgroups</groupId>
 				<artifactId>jgroups</artifactId>
-				<version>#{version.org.jgroups}</version>
+				<version>${version.org.jgroups}</version>
 				<type>bundle</type>
 			</dependency>
 			<dependency>
 				<groupId>org.mvel</groupId>
 				<artifactId>mvel2</artifactId>
-				<version>#{version.org.mvel}</version>
+				<version>${version.org.mvel}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.slf4j</groupId>
 				<artifactId>slf4j-api</artifactId>
-				<version>#{version.org.slf4j}</version>
+				<version>${version.org.slf4j}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.slf4j</groupId>
 				<artifactId>slf4j-log4j12</artifactId>
-                <version>#{version.org.slf4j}</version>
+                <version>${version.org.slf4j}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.slf4j</groupId>
 				<artifactId>slf4j-simple</artifactId>
-                <version>#{version.org.slf4j}</version>
+                <version>${version.org.slf4j}</version>
 			</dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-beans</artifactId>
+                <version>${version.org.springframework}</version>
+                <optional>true</optional>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-core</artifactId>
+                <version>${version.org.springframework}</version>
+                <optional>true</optional>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-context</artifactId>
+                <version>${version.org.springframework}</version>
+                <optional>true</optional>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-context-support</artifactId>
+                <version>${version.org.springframework}</version>
+                <optional>true</optional>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-aop</artifactId>
+                <version>${version.org.springframework}</version>
+                <optional>true</optional>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-web</artifactId>
+                <version>${version.org.springframework}</version>
+                <optional>true</optional>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-webmvc</artifactId>
+                <version>${version.org.springframework}</version>
+                <optional>true</optional>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-jms</artifactId>
+                <version>${version.org.springframework}</version>
+                <optional>true</optional>
+            </dependency>
 			<dependency>
 				<groupId>org.testng</groupId>
 				<artifactId>testng</artifactId>
-				<version>#{version.org.testng}</version>
+				<version>${version.org.testng}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.xerial.snappy</groupId>
 				<artifactId>snappy-java</artifactId>
-				<version>#{version.org.xerial.snappy}</version>
+				<version>${version.org.xerial.snappy}</version>
 				<type>bundle</type>
+			</dependency>
+			<dependency>
+				<groupId>apache-xerces</groupId>
+				<artifactId>xml-apis</artifactId>
+				<version>2.9.1</version>
+				<scope>provided</scope>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
