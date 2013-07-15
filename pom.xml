@@ -45,77 +45,77 @@
 	<properties>
         <version.aopalliance>1.0</version.aopalliance>
         <version.ch.qos.cal10n>0.8.1</version.ch.qos.cal10n>
-<!--         <version.com.google.appengine>1.7.6</version.com.google.appengine> -->
-        <version.com.google.appengine>1.7.7.1</version.com.google.appengine>
+        <version.com.google.appengine>1.7.6</version.com.google.appengine>
+<!--         <version.com.google.appengine>1.7.7.1</version.com.google.appengine> -->
 <!--         <version.com.google.guava>r05</version.com.google.guava> -->
-<!--         <version.com.google.guava>13.0.1</version.com.google.guava> -->
-        <version.com.google.guava>14.0.1</version.com.google.guava>
+        <version.com.google.guava>13.0.1</version.com.google.guava>
+<!--         <version.com.google.guava>14.0.1</version.com.google.guava> -->
         <version.com.google.gwt>2.5.1</version.com.google.gwt>
         <version.com.google.inject.guice>3.0</version.com.google.inject.guice>
         <version.com.ocpsoft.ocpsoft-pretty-faces>2.0.4</version.com.ocpsoft.ocpsoft-pretty-faces>
-<!--         <version.com.sun.faces.jsf.impl>2.0.2</version.com.sun.faces.jsf.impl> -->
-        <version.com.sun.faces.jsf.impl>2.1.21</version.com.sun.faces.jsf.impl>
-<!--         <version.com.thoughtworks.paranamer>2.3</version.com.thoughtworks.paranamer> -->
-        <version.com.thoughtworks.paranamer>2.5.2</version.com.thoughtworks.paranamer>
-<!--         <version.commons-codec>1.5</version.commons-codec> -->
-        <version.commons-codec>1.7</version.commons-codec>
-<!--         <version.commons-io>1.4</version.commons-io> -->
-        <version.commons-io>2.4</version.commons-io>
+        <version.com.sun.faces.jsf.impl>2.0.2</version.com.sun.faces.jsf.impl>
+<!--         <version.com.sun.faces.jsf.impl>2.1.21</version.com.sun.faces.jsf.impl> -->
+        <version.com.thoughtworks.paranamer>2.3</version.com.thoughtworks.paranamer>
+<!--         <version.com.thoughtworks.paranamer>2.5.2</version.com.thoughtworks.paranamer> -->
+        <version.commons-codec>1.5</version.commons-codec>
+<!--         <version.commons-codec>1.7</version.commons-codec> -->
+        <version.commons-io>1.4</version.commons-io>
+<!--         <version.commons-io>2.4</version.commons-io> -->
         <version.commons-lang>2.6</version.commons-lang>
-<!--         <version.commons-logging>1.1.1</version.commons-logging> -->
-        <version.commons-logging>1.1.2</version.commons-logging>
+        <version.commons-logging>1.1.1</version.commons-logging>
+<!--         <version.commons-logging>1.1.2</version.commons-logging> -->
         <version.javax.annotation>1.0</version.javax.annotation>
         <version.javax.el>2.2</version.javax.el>
-<!--         <version.javax.enterprise>1.0-SP4</version.javax.enterprise> -->
-        <version.javax.enterprise>1.1</version.javax.enterprise>
+        <version.javax.enterprise>1.0-SP4</version.javax.enterprise>
+<!--         <version.javax.enterprise>1.1</version.javax.enterprise> -->
         <version.javax.inject>1</version.javax.inject>
         <version.javax.jms>1.1</version.javax.jms>
-<!--         <version.javax.persistence>1.0</version.javax.persistence> -->
-        <version.javax.persistence>1.0.2</version.javax.persistence>
+        <version.javax.persistence>1.0</version.javax.persistence>
+<!--         <version.javax.persistence>1.0.2</version.javax.persistence> -->
         <version.javax.servlet>2.5</version.javax.servlet>
         <version.javax.transaction>1.1</version.javax.transaction>
         <version.org.jboss.spec.javax.resource.jboss-connector-api-1.5-spec>1.0.0.Final</version.org.jboss.spec.javax.resource.jboss-connector-api-1.5-spec>
-<!--         <version.javax.validation>1.0.0.GA</version.javax.validation> -->
-        <version.javax.validation>1.1.0.Final</version.javax.validation>
-<!--         <version.junit>4.4</version.junit> -->
+        <version.javax.validation>1.0.0.GA</version.javax.validation>
+<!--         <version.javax.validation>1.1.0.Final</version.javax.validation> -->
+        <version.junit>4.4</version.junit>
 <!--         <version.junit>4.8.1</version.junit> -->
 <!--         <version.junit>4.10</version.junit> -->
-        <version.junit>4.11</version.junit>
-<!--         <version.log4j>1.2.16</version.log4j> -->
-        <version.log4j>1.2.17</version.log4j>
-<!--         <version.org.apache.avro>1.6.3</version.org.apache.avro> -->
-        <version.org.apache.avro>1.7.4</version.org.apache.avro>
+<!--         <version.junit>4.11</version.junit> -->
+        <version.log4j>1.2.16</version.log4j>
+<!--         <version.log4j>1.2.17</version.log4j> -->
+        <version.org.apache.avro>1.6.3</version.org.apache.avro>
+<!--         <version.org.apache.avro>1.7.4</version.org.apache.avro> -->
         <version.org.apache.lucene.lucene-regex>3.0.3</version.org.apache.lucene.lucene-regex>
-<!--         <version.org.apache.lucene>3.6.2</version.org.apache.lucene> -->
-        <version.org.apache.lucene>4.2.1</version.org.apache.lucene>
-<!--         <version.xerces>2.9.1</version.xerces> -->
+        <version.org.apache.lucene>3.6.2</version.org.apache.lucene>
+<!--         <version.org.apache.lucene>4.2.1</version.org.apache.lucene> -->
+        <version.xerces>2.9.1</version.xerces>
 <!--         <version.xerces>2.10.0</version.xerces> -->
-        <version.org.apache.servicemix.bundles.xerces>2.11.0_1</version.org.apache.servicemix.bundles.xerces>
-<!--         <version.org.apache.tika.tika-core>1.1</version.org.apache.tika.tika-core> -->
-        <version.org.apache.tika.tika-core>1.3</version.org.apache.tika.tika-core>
-<!--         <version.org.aspectj>1.6.6</version.org.aspectj> -->
+<!--         <version.org.apache.servicemix.bundles.xerces>2.11.0_1</version.org.apache.servicemix.bundles.xerces> -->
+        <version.org.apache.tika.tika-core>1.1</version.org.apache.tika.tika-core>
+<!--         <version.org.apache.tika.tika-core>1.3</version.org.apache.tika.tika-core> -->
+        <version.org.aspectj>1.6.6</version.org.aspectj>
 <!--         <version.org.aspectj>1.7.1</version.org.aspectj> -->
-        <version.org.aspectj>1.7.2</version.org.aspectj>
-<!--         <version.org.codehaus.jackson>1.9.2</version.org.codehaus.jackson> -->
-        <version.org.codehaus.jackson>1.9.12</version.org.codehaus.jackson>
-<!--         <version.org.glassfish.web.el-impl>2.1.2-b04</version.org.glassfish.web.el-impl> -->
-        <version.org.glassfish.web.el-impl>2.2.1-b05</version.org.glassfish.web.el-impl>
+<!--         <version.org.aspectj>1.7.2</version.org.aspectj> -->
+        <version.org.codehaus.jackson>1.9.2</version.org.codehaus.jackson>
+<!--         <version.org.codehaus.jackson>1.9.12</version.org.codehaus.jackson> -->
+        <version.org.glassfish.web.el-impl>2.1.2-b04</version.org.glassfish.web.el-impl>
+<!--         <version.org.glassfish.web.el-impl>2.2.1-b05</version.org.glassfish.web.el-impl> -->
         <version.org.hibernate.common.hibernate-commons-annotations>4.0.1.Final</version.org.hibernate.common.hibernate-commons-annotations>
-<!--         <version.org.hibernate.hibernate-core>3.5.1-Final</version.org.hibernate.hibernate-core> -->
-        <version.org.hibernate.hibernate-core>4.2.0.Final</version.org.hibernate.hibernate-core>
+        <version.org.hibernate.hibernate-core>3.5.1-Final</version.org.hibernate.hibernate-core>
+<!--         <version.org.hibernate.hibernate-core>4.2.0.Final</version.org.hibernate.hibernate-core> -->
         <version.org.hibernate.hibernate-jpamodelgen>1.2.0.Final</version.org.hibernate.hibernate-jpamodelgen>
         <version.org.hibernate.hibernate-search>4.2.0.Final</version.org.hibernate.hibernate-search>
-<!--         <version.org.hibernate.hibernate-validator>4.0.0.GA</version.org.hibernate.hibernate-validator> -->
-<!--         <version.org.hibernate.hibernate-validator>4.2.0.Final</version.org.hibernate.hibernate-validator> -->
-        <version.org.hibernate.hibernate-validator>5.0.0.Final</version.org.hibernate.hibernate-validator>
+        <version.org.hibernate.hibernate-validator>4.0.0.GA</version.org.hibernate.hibernate-validator>
+        <version.org.hibernate.hibernate-validator>4.2.0.Final</version.org.hibernate.hibernate-validator>
+<!--         <version.org.hibernate.hibernate-validator>5.0.0.Final</version.org.hibernate.hibernate-validator> -->
         <version.org.hibernate.javax.persistence>1.0.1.Final</version.org.hibernate.javax.persistence>
-<!--         <version.org.hsqldb>1.8.0.10</version.org.hsqldb> -->
-        <version.org.hsqldb>2.2.9</version.org.hsqldb>
-<!--         <version.org.infinispan>5.2.4.Final</version.org.infinispan> -->
-        <version.org.infinispan>5.2.5.Final</version.org.infinispan>
+        <version.org.hsqldb>1.8.0.10</version.org.hsqldb>
+<!--         <version.org.hsqldb>2.2.9</version.org.hsqldb> -->
+        <version.org.infinispan>5.2.4.Final</version.org.infinispan>
+<!--         <version.org.infinispan>5.2.5.Final</version.org.infinispan> -->
         <version.org.jboss.aop>2.0.1.GA</version.org.jboss.aop>
-<!--         <version.org.jboss.arquillian>1.0.0.Alpha2</version.org.jboss.arquillian> -->
-        <version.org.jboss.arquillian>1.0.3.Final</version.org.jboss.arquillian>
+        <version.org.jboss.arquillian>1.0.0.Alpha2</version.org.jboss.arquillian>
+<!--         <version.org.jboss.arquillian>1.0.3.Final</version.org.jboss.arquillian> -->
         <version.org.jboss.arquillian.arquillian-bom>1.0.3.Final</version.org.jboss.arquillian.arquillian-bom>
         <version.org.jboss.arquillian.container.arquillian-glassfish-embedded-30></version.org.jboss.arquillian.container.arquillian-glassfish-embedded-30>
         <version.org.jboss.arquillian.container.arquillian-glassfish-managed-3.1>1.0.0.CR3</version.org.jboss.arquillian.container.arquillian-glassfish-managed-3.1>
@@ -134,28 +134,28 @@
         <version.org.jboss.arquillian.extension.arquillian-phantom-driver>1.0.3</version.org.jboss.arquillian.extension.arquillian-phantom-driver>
         <version.org.jboss.arquillian.extension.arquillian-warp-jsf>1.0.0.Alpha2</version.org.jboss.arquillian.extension.arquillian-warp-jsf>
         <version.org.jboss.arquillian.graphene>1.0.0.Final</version.org.jboss.arquillian.graphene>
-<!--         <version.org.jboss.arquillian.graphene.graphene-webdriver>2.0.0.Beta1-SNAPSHOT</version.org.jboss.arquillian.graphene.graphene-webdriver> -->
-        <version.org.jboss.arquillian.graphene.graphene-webdriver>2.0.0.Alpha3</version.org.jboss.arquillian.graphene.graphene-webdriver>
+        <version.org.jboss.arquillian.graphene.graphene-webdriver>2.0.0.Beta1-SNAPSHOT</version.org.jboss.arquillian.graphene.graphene-webdriver>
+<!--         <version.org.jboss.arquillian.graphene.graphene-webdriver>2.0.0.Alpha3</version.org.jboss.arquillian.graphene.graphene-webdriver> -->
         <version.org.jboss.arquillian.junit>1.0.3.Final</version.org.jboss.arquillian.junit>
         <version.org.jboss.arquillian.protocol.arquillian-protocol-servlet>1.0.3.Final</version.org.jboss.arquillian.protocol.arquillian-protocol-servlet>
-<!--         <version.org.jboss.as7>7.1.0.Final</version.org.jboss.as7> -->
-        <version.org.jboss.as7>7.2.0.Final</version.org.jboss.as7>
-<!--         <version.org.jboss.byteman>2.1.0</version.org.jboss.byteman> -->
-        <version.org.jboss.byteman>2.1.2</version.org.jboss.byteman>
-<!--         <version.org.jboss.classloader>2.2.0.Alpha3</version.org.jboss.classloader> -->
-        <version.org.jboss.classloader>2.2.1.GA</version.org.jboss.classloader>
-<!--         <version.org.jboss.common.core>2.2.17.GA</version.org.jboss.common.core> -->
-        <version.org.jboss.common.core>2.2.20.GA</version.org.jboss.common.core>
-<!--         <version.org.jboss.deployers>2.2.0.Alpha2</version.org.jboss.deployers> -->
-        <version.org.jboss.deployers>2.2.2.GA</version.org.jboss.deployers>
+        <version.org.jboss.as7>7.1.0.Final</version.org.jboss.as7>
+<!--         <version.org.jboss.as7>7.2.0.Final</version.org.jboss.as7> -->
+        <version.org.jboss.byteman>2.1.0</version.org.jboss.byteman>
+<!--         <version.org.jboss.byteman>2.1.2</version.org.jboss.byteman> -->
+        <version.org.jboss.classloader>2.2.0.Alpha3</version.org.jboss.classloader>
+<!--         <version.org.jboss.classloader>2.2.1.GA</version.org.jboss.classloader> -->
+        <version.org.jboss.common.core>2.2.17.GA</version.org.jboss.common.core>
+<!--         <version.org.jboss.common.core>2.2.20.GA</version.org.jboss.common.core> -->
+        <version.org.jboss.deployers>2.2.0.Alpha2</version.org.jboss.deployers>
+<!--         <version.org.jboss.deployers>2.2.2.GA</version.org.jboss.deployers> -->
         <version.org.jboss.errai>2.3.0.Final</version.org.jboss.errai>
-<!--         <version.org.jboss.ironjacamar>1.0.4.Final</version.org.jboss.ironjacamar> -->
-        <version.org.jboss.ironjacamar>1.0.16.Final</version.org.jboss.ironjacamar>
+        <version.org.jboss.ironjacamar>1.0.4.Final</version.org.jboss.ironjacamar>
+<!--         <version.org.jboss.ironjacamar>1.0.16.Final</version.org.jboss.ironjacamar> -->
         <version.org.jboss.jandex>1.0.0.Beta7</version.org.jboss.jandex>
-<!--         <version.org.jboss.javaee.jboss-ejb-api>3.0.0.GA</version.org.jboss.javaee.jboss-ejb-api> -->
-        <version.org.jboss.javaee.jboss-ejb-api>3.0.0.GA_SP1</version.org.jboss.javaee.jboss-ejb-api>
-<!--         <version.org.jboss.javassist>3.11.0.GA</version.org.jboss.javassist> -->
-        <version.org.jboss.javassist>3.17.1-GA</version.org.jboss.javassist>
+        <version.org.jboss.javaee.jboss-ejb-api>3.0.0.GA</version.org.jboss.javaee.jboss-ejb-api>
+<!--         <version.org.jboss.javaee.jboss-ejb-api>3.0.0.GA_SP1</version.org.jboss.javaee.jboss-ejb-api> -->
+        <version.org.jboss.javassist>3.11.0.GA</version.org.jboss.javassist>
+<!--         <version.org.jboss.javassist>3.17.1-GA</version.org.jboss.javassist> -->
 <!--         <version.org.jboss.jbossts.jbossjts>4.16.4.Final</version.org.jboss.jbossts.jbossjts> -->
         <version.org.jboss.jbossts.jta.narayana-jta>4.17.3.Final</version.org.jboss.jbossts.jta.narayana-jta>
 <!--         <version.org.jboss.jbossts.jta.narayana-jta>4.17.4.Final</version.org.jboss.jbossts.jta.narayana-jta> -->
@@ -164,54 +164,52 @@
         <version.org.jboss.jboss-mdr>2.2.0.SP1</version.org.jboss.jboss-mdr>
 <!--         <version.org.jboss.mdr.vfs2>2.0.2.GA</version.org.jboss.mdr.vfs2> -->
 <!--         <version.org.jboss.vfs2>2.1.3.SP1</version.org.jboss.vfs2> -->
-        <version.org.jboss.jboss-vfs>3.1.0.Final</version.org.jboss.jboss-vfs>
+<!--         <version.org.jboss.jboss-vfs>3.1.0.Final</version.org.jboss.jboss-vfs> -->
 <!--         <version.org.jboss.logging>3.1.0.GA</version.org.jboss.logging> -->
         <version.org.jboss.logging>3.1.3.GA</version.org.jboss.logging>
-<!--         <version.org.jboss.logging.jboss-logging-log4j>2.1.0.GA</version.org.jboss.logging.jboss-logging-log4j> -->
-        <version.org.jboss.logging.jboss-logging-log4j>2.1.2.GA</version.org.jboss.logging.jboss-logging-log4j>
+        <version.org.jboss.logging.jboss-logging-log4j>2.1.0.GA</version.org.jboss.logging.jboss-logging-log4j>
+<!--         <version.org.jboss.logging.jboss-logging-log4j>2.1.2.GA</version.org.jboss.logging.jboss-logging-log4j> -->
         <version.org.jboss.logging.jboss-logging-processor>1.0.3.Final</version.org.jboss.logging.jboss-logging-processor>
         <version.org.jboss.logging.jboss-logging-processor>1.1.0.Final</version.org.jboss.logging.jboss-logging-processor>
-<!--         <version.org.jboss.logging.jboss-logging-spi>2.1.0.GA</version.org.jboss.logging.jboss-logging-spi> -->
-        <version.org.jboss.logging.jboss-logging-spi>2.1.2.GA</version.org.jboss.logging.jboss-logging-spi>
-<!--         <version.org.jboss.man>2.1.0.GA</version.org.jboss.man> -->
-        <version.org.jboss.man>2.1.1.SP2</version.org.jboss.man>
+        <version.org.jboss.logging.jboss-logging-spi>2.1.0.GA</version.org.jboss.logging.jboss-logging-spi>
+<!--         <version.org.jboss.logging.jboss-logging-spi>2.1.2.GA</version.org.jboss.logging.jboss-logging-spi> -->
+        <version.org.jboss.man>2.1.0.GA</version.org.jboss.man>
+<!--         <version.org.jboss.man>2.1.1.SP2</version.org.jboss.man> -->
         <version.org.jboss.microcontainer>2.2.0.M2</version.org.jboss.microcontainer>
-<!--         <version.org.jboss.modules>1.0.2.GA</version.org.jboss.modules> -->
-        <version.org.jboss.modules>1.2.0.Final</version.org.jboss.modules>
-<!--         <version.org.jboss.msc>1.0.1.GA</version.org.jboss.msc> -->
-        <version.org.jboss.msc>1.1.2.Final</version.org.jboss.msc>
+        <version.org.jboss.modules>1.0.2.GA</version.org.jboss.modules>
+<!--         <version.org.jboss.modules>1.2.0.Final</version.org.jboss.modules> -->
+        <version.org.jboss.msc>1.0.1.GA</version.org.jboss.msc>
+<!--         <version.org.jboss.msc>1.1.2.Final</version.org.jboss.msc> -->
 <!--         <version.org.jboss.pojocache>3.0.0.GA</version.org.jboss.pojocache> -->
 <!--         <version.org.jboss.resteasy>2.3.5.Final</version.org.jboss.resteasy> -->
 <!--         <version.org.jboss.security.negotiation>2.1.1.Final</version.org.jboss.security.negotiation> -->
         <version.org.jboss.shrinkwrap.descriptors>2.0.0-alpha-4</version.org.jboss.shrinkwrap.descriptors>
-<!--         <version.org.jboss.shrinkwrap.resolver>1.0.0-beta-7</version.org.jboss.shrinkwrap.resolver> -->
-        <version.org.jboss.shrinkwrap.resolver>2.0.0-beta-3</version.org.jboss.shrinkwrap.resolver>
+        <version.org.jboss.shrinkwrap.resolver>1.0.0-beta-7</version.org.jboss.shrinkwrap.resolver>
+<!--         <version.org.jboss.shrinkwrap.resolver>2.0.0-beta-3</version.org.jboss.shrinkwrap.resolver> -->
 <!--         <version.org.jboss.spec.javax.resource.jboss-connector-api_1.5_spec>1.0.0.Final</version.org.jboss.spec.javax.resource.jboss-connector-api_1.5_spec> -->
-<!--         <version.org.jboss.spec.javax.servlet.3.0>1.0.0.Final</version.org.jboss.spec.javax.servlet.3.0> -->
-        <version.org.jboss.spec.javax.servlet.3.0>1.0.2.Final</version.org.jboss.spec.javax.servlet.3.0>
+        <version.org.jboss.spec.javax.servlet.3.0>1.0.0.Final</version.org.jboss.spec.javax.servlet.3.0>
+<!--         <version.org.jboss.spec.javax.servlet.3.0>1.0.2.Final</version.org.jboss.spec.javax.servlet.3.0> -->
         <version.org.jboss.spec.javax.servlet.3.1>1.0.0.Alpha1</version.org.jboss.spec.javax.servlet.3.1>
 <!--         <version.org.jboss.spec.jboss.javaee.6.0>3.0.2.Final</version.org.jboss.spec.jboss.javaee.6.0> -->
-<!--         <version.org.jboss.test>1.1.9.GA</version.org.jboss.test> -->
-        <version.org.jboss.test>1.2.0.Final</version.org.jboss.test>
+        <version.org.jboss.test>1.1.9.GA</version.org.jboss.test>
+<!--         <version.org.jboss.test>1.2.0.Final</version.org.jboss.test> -->
         <version.org.jboss.test-jsf.jsf-mock>1.0.0</version.org.jboss.test-jsf.jsf-mock>
-<!--         <version.org.jboss.weld.servlet.weld-servlet>1.0.1-Final</version.org.jboss.weld.servlet.weld-servlet> -->
-        <version.org.jboss.weld.servlet.weld-servlet>1.1.12.Final</version.org.jboss.weld.servlet.weld-servlet>
+        <version.org.jboss.weld.servlet.weld-servlet>1.0.1-Final</version.org.jboss.weld.servlet.weld-servlet>
+<!--         <version.org.jboss.weld.servlet.weld-servlet>1.1.12.Final</version.org.jboss.weld.servlet.weld-servlet> -->
 <!--         <version.org.jboss.weld.weld-se>1.0.1-Final</version.org.jboss.weld.weld-se> -->
-<!--         <version.org.jbossxb>2.0.2.Beta4</version.org.jbossxb> -->
-        <version.org.jbossxb>2.0.3.GA</version.org.jbossxb>
+        <version.org.jbossxb>2.0.2.Beta4</version.org.jbossxb>
+<!--         <version.org.jbossxb>2.0.3.GA</version.org.jbossxb> -->
         <version.org.jgroups>3.2.8.Final</version.org.jgroups>
-<!--         <version.org.mvel>2.1.Beta8</version.org.mvel> -->
-        <version.org.mvel>2.1.4.Final</version.org.mvel>
+        <version.org.mvel>2.1.Beta8</version.org.mvel>
+<!--         <version.org.mvel>2.1.4.Final</version.org.mvel> -->
 <!--         <version.org.osgi>4.2.0</version.org.osgi> -->
 <!--         <version.org.picketlink>3.0.0.Beta1</version.org.picketlink> -->
 <!--         <version.org.richfaces.richfaces-build-checkstyle>5</version.org.richfaces.richfaces-build-checkstyle> -->
 <!--         <version.org.richfaces>4.2.0.Final</version.org.richfaces> -->
 <!--         <version.org.slf4j>1.5.10</version.org.slf4j> -->
-<!--         <version.org.slf4j>1.6.1</version.org.slf4j> -->
-        <version.org.slf4j>1.7.5</version.org.slf4j>
-<!--         <version.org.springframework.security>3.1.3.RELEASE</version.org.springframework.security> -->
+        <version.org.slf4j>1.6.1</version.org.slf4j>
+<!--         <version.org.slf4j>1.7.5</version.org.slf4j> -->
         <version.org.springframework.security>3.1.3.RELEASE</version.org.springframework.security>
-<!--         <version.org.springframework.webflow>2.3.2.RELEASE</version.org.springframework.webflow> -->
         <version.org.springframework.webflow>2.3.2.RELEASE</version.org.springframework.webflow>
 <!--         <version.org.springframework.ws>2.1.2.RELEASE</version.org.springframework.ws> -->
         <version.org.springframework.ws>2.1.3.RELEASE</version.org.springframework.ws>
@@ -219,10 +217,10 @@
 <!--         <version.org.springframework>3.0.7.RELEASE</version.org.springframework> -->
 <!--         <version.org.springframework>3.1.4.RELEASE</version.org.springframework> -->
         <version.org.springframework>3.2.2.RELEASE</version.org.springframework>
-<!--         <version.org.testng>5.10</version.org.testng> -->
+        <version.org.testng>5.10</version.org.testng>
 <!--         <version.org.testng>5.14.6</version.org.testng> -->
 <!--         <version.org.testng>6.1.1</version.org.testng> -->
-        <version.org.testng>6.8.1</version.org.testng>
+<!--         <version.org.testng>6.8.1</version.org.testng> -->
         <version.org.xerial.snappy>1.0.4.1</version.org.xerial.snappy>
 
 
